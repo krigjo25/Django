@@ -1,0 +1,133 @@
+/*					Iphone 5/SE 				 */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000315}}
+* {
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000318}}
+header, main, footer {
+  inline-size: 100%;
+  display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000322}}
+main, footer {
+  margin-block-start: 3em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000325}}
+body {
+  color: #000;
+  font-size: 0.85em;
+  inline-size: 100%;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  writing-mode: horizontal-tb;
+  background-image: linear-gradient(to right bottom, #fff1c9, #ffecc4, #ffe6c0, #ffe1bc, #ffdbb9, #f9d2b1, #f2caa9, #ecc1a2, #deb394, #cfa587, #c1977a, #b38a6d); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000334}}
+h1 span:nth-child(1) {
+  color: #fafafa; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000337}}
+h1 span:nth-child(2) {
+  color: #b38a6d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000343}}
+header a {
+  color: #000000;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000347}}
+header h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: "pricedown"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000352}}
+header li {
+  inline-size: 8em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000358}}
+main article {
+  margin-block-end: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000360}}
+main p {
+  font-size: 1.3em;
+  text-align: center;
+  text-align: -webkit-center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000364}}
+main h3 {
+  color: #b38a6d;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000368}}
+  main h3 nav {
+    column-count: 2;
+    column: 3.125em 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000371}}
+    main h3 nav a::link {
+      color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000373}}
+    main h3 nav li {
+      font-size: 0.925em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000377}}
+main div.cap {
+  inline-size: 100%;
+  text-align: center;
+  text-align: -webkit-center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000382}}
+main button {
+  color: #11DFF2;
+  cursor: pointer;
+  block-size: 4em;
+  inline-size: 9.7em;
+  margin-block-end: 0.43em;
+  margin-inline-end: 0.2em;
+  background-color: #2A6166; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000391}}
+main .btn {
+  inline-size: 48%;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000396}}
+nav ul {
+  padding-inline-start: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\0000398}}
+  nav ul li {
+    display: inline-block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003101}}
+nav.nav ul {
+  padding-inline-start: 0em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003105}}
+div.cap p {
+  font-size: 1.1em;
+  inline-size: 16em;
+  text-align: justify; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003112}}
+footer p {
+  font-size: 1.12em;
+  text-align: center;
+  text-align: -webkit-center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003117}}
+  footer p span {
+    color: #b38a6d;
+    font-family: "pricedown"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003121}}
+footer cite {
+  font-size: 0.9em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003125}}
+.samp {
+  inline-size: 4em;
+  margin-inline-start: 4em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003129}}
+.discord {
+  left: 3em;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Documents\/Jottacloud\/Kristoffer\/Documents\/Projects\/WebDesign\%20\&\%20WebDevelopment\/Samp\%20project\/Eastcoastrpg\/scass\/index\.sass}line{font-family:\00003132}}
+.test {
+  inline-size: 100%;
+  margin-block-end: 3em;
+  margin-block-start: 3em; }
+
+/*# sourceMappingURL=index.css.map */

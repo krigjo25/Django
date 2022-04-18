@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Kristoffer Gjøsund</title>
+        <link rel="stylesheet" type="text/css" href="../css/keyframes.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/animation-bar.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/expand-collapse.css" media="screen" />
+    </head>
+    <body>
+        <main>
+            <button type="button" class="wrapper" onclick="showQualific()">Qualifications</button>
+            <section id ="Qualific" class="overlay">
+                <article class="content">
+                    <a href="javascript:void(0)" class="cbtn" onclick="hContent()">&times;</a>
+                        <h2> Certifications</h2>
+                        <ol>
+                            <h3>- Front-end</h3>
+                            <li><a href="#download">Demo1</a></li>
+                            <li><a href="#download">demo2</a></li>
+                            <li><a href="#download">demo3</a></li>
+                
+                            <h3>- Backend-end</h3>
+                            <li><a href="#download">demo4</a></li>
+                            <li><a href="#download">demo5</a></li>
+                            <li><a href="#download">demo6</a></li>
+                        </ol>
+                </article>
+            </section>
+        </main>
+    </body>
+<script>
+                                 /* Qualifications*/
+                                     /*Open */
+                                     function showQualific() {
+  document.getElementById("Qualific").style.blockSize = "100%";
+}
+
+/* Close */
+function hideQualific() {
+  document.getElementById("Qualific").style.blockSize = "0%";
+}
+                                 /* Journey*/
+                                     /*Open */
+                                     function showJourney() {
+  document.getElementById("jurny").style.blockSize = "100%";
+}
+
+/* Close */
+function hideJourney() {
+  document.getElementById("jurny").style.blockSize = "0%";
+}
+                                 /* Library*/
+                                     /*Open */
+                                     function sContent() {
+  document.getElementById("lib").style.blockSize = "100%";
+}
+
+/* Close */
+function hContent() {
+  document.getElementById("lib").style.blockSize = "0%";
+}
+                                 /* About me*/
+                                     /*Open */
+                                     function sContent() {
+  document.getElementById("abtme").style.blockSize = "100%";
+}
+
+/* Close */
+function hContent() {
+  document.getElementById("abtme").style.blockSize = "0%";
+}
+</script>
+</html>

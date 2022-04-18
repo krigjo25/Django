@@ -1,0 +1,46 @@
+/***************************************************** 
+* Title : 		Cascade Stylesheet for the footer.
+* Intention :	Since footer is used on everypage i suggest a own CSS Sheet for it.
+* Created : 	10.10-20 
+* Edited :		
+* IMPORTANT NOTES :		 
+*******************************************************/
+footer {
+  width: 100%;
+  height: 25em;
+  display: block;
+  font-size: 1.02em;
+  text-align: center;
+  padding: 10em 0em 0em 0em;
+  color: rgba(254, 254, 254,.6);
+  background-color: rgba(3,0,28,.95);
+  font-family: 'Open Sans', sans-serif;
+}
+footer > ul > li {
+	display: inline-block;
+	list-style-type: none;
+}
+a:link {
+	font-family: helvetica;
+	cursor: pointer;
+}
+footer a:link {
+	font-style: italic;
+	text-decoration: none;
+	color: rgba(254, 254, 254,.6);
+}
+footer a:visited {
+	color: rgba(54, 8, 79, .95);
+}
+footer a:hover {
+	color: rgba(254, 254, 254,.79);
+}
+footer a:active {
+	color: rgba(147, 2, 13, .7);
+}
+
+/* Social media / fontawresome */
+
+.solma > a:link {
+	margin: 0em 2em 0em 0em;
+}

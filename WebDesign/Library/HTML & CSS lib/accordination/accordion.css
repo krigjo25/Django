@@ -1,0 +1,33 @@
+/*
+@ by Raul Barrera
+
+*/
+.btn {
+
+    border: none;
+    background-color: transparent;
+
+}
+
+.acd {
+
+    border: none;
+    color: #444;
+    padding: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    inline-size: 100%;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.pnl {
+
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: White;
+
+}

@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  color: wheat;
+  max-block-size: 100%;
+  max-inline-size:100%;
+  background-color:#121212;
+  writing-mode: horizontal-tb;
+  -webkit-writing-mode: horizontal-tb;
+}
+#curve {
+  margin: auto;
+  max-block-size: 100%;
+  max-inline-size: 50%;
+}
+ul li {
+
+  position: relative;
+}
+/* CONTAINER IMAGE */
+.ID-Image {
+  display: inline;
+  margin: 3em auto;
+  inline-size: 100%;
+  position: relative;
+}
+.ID-Image img { 
+  inline-size: 170px;
+  border-radius: 170px;
+  border: 1px solid whitesmoke;
+}
+
+article.header { 
+  top: 1em;
+  block-size: 3em;
+  position: relative;
+  inline-size: 177px;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+article.right {
+  top: 7em;
+  right: 10em;
+  block-size: 3em;
+  position: relative;
+  inline-size: 177px;
+  transform: rotate(90deg);
+}
+article.left {
+  top: -8em;
+  left: 9.29em;
+  block-size: 3em;
+  position: relative;
+  inline-size: 177px;
+  transform: rotate(-90deg);
+}
+article.foot {
+  top: -4.2em;
+  left: 0.1em;
+  block-size: 3em;
+  position: relative;
+  inline-size: 166px;
+}
+
+main footer {
+  top: 88%;
+  left: 50%;
+  position: absolute;
+}
+main aside {
+  top: 15rem;
+  position: absolute;
+}
+
+footer {
+  padding-block-start: 9em;
+  text-align: -webkit-center;
+}
+footer ul {
+  list-style-type: none;
+}
+
+#aut {
+  padding-block-start: 2em;
+}
+cite a:link {
+  color: wheat;
+}
+header, aside, main a:link {
+  color:black;  
+}
+.cpro {
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+
+
+
+@media screen and (min-device-width: 480px) and (orientation : landscape) {
+
+  main header {
+    top: 7em;
+    left: 50%;
+    position: absolute;
+  }
+  main footer {
+    top: 15rem;
+    left: 50%;
+    position: absolute;
+  }
+
+  footer {
+    padding-block-start: 9em;
+    text-align: -webkit-center;
+  }
+  footer ul {
+    list-style-type: none;
+  }
+  
+  #aut {
+    padding-block-start: 2em;
+  }
+  cite a:link {
+    color: wheat;
+  }
+  header, aside, main a:link {
+    color:black;  
+  }
+}

@@ -1,0 +1,98 @@
+/*
+CSS Created by STOCKFLOW
+CSS MODIFYED BY : @krigjo25
+Finished : 22.05-21
+
+*/
+div {
+  block-size:  100%;
+  inline-size: 100%;
+}
+/*Span container which holds the progress bar*/
+div span {
+  margin: auto;
+  display: block;
+  block-size: 100%;
+  position: relative;
+  transform: rotate(180deg);      /* __ */
+}
+article.foot div span {
+  margin: auto;
+  display: block;
+  block-size: 100%;
+  transform: rotate(0deg);      /* __ */
+}
+
+article.left div span {
+  margin: auto;
+  display: block;
+  block-size: 1px;
+  inline-size: 3em;
+  transform: rotate(45deg);      /* __ */
+}
+article.right div span {
+  margin: auto;
+  display: block;
+  block-size: 1px;
+  inline-size: 3em;
+  transform: rotate(-45deg);      /* __ */
+}
+
+
+
+
+
+                                        /*progress animation*/
+                                        /*Overlay / wrapper*/
+                                      
+.meter {
+  position: inherit;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+
+}
+article.header .meter {
+  top: 3em;
+}
+article.left .meter {
+  top: -1.3em;
+}
+article.right .meter {
+  top: -1.5em;
+}
+                                  /*The animated progressbar*/
+.progress {
+  background-color: #e4c465;
+  animation: upper-Bar 5s normal  forwards;
+  -o-animation: upper-Bar 5s normal forwards;
+  -moz-animation: upper-Bar 5s normal forwards;
+  -webkit-animation: upper-Bar 5s normal forwards;
+}
+
+article.left span.progress, article.right span.progress {
+  block-size: 1px;
+  animation: hrBar 5s normal 5s forwards;
+  -o-animation: hrBar 5s normal 5s forwards;
+  -moz-animation: hrBar 5s normal 5s forwards;
+  -webkit-animation: hrBar 5s normal 5s infinite;
+}
+article.header .meter span.progress { 
+  inline-size: 1px;
+}
+article.left .meter span.progress { 
+  animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+article.foot .meter span.progress {
+  inline-size: 1px;
+  animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+}
+
+article.right .meter span.progress { 
+  animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+
+}

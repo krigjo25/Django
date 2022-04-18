@@ -1,0 +1,41 @@
+/*					Iphone 5/SE 				*/
+section.lvl3  {
+  column-count: 3;
+}
+section.lvl2  {
+  column-count: 2;
+}
+section.lvl1  {
+  column-count: 3;
+}
+section.helper  {
+  column-count: 3;
+}
+article {
+  display: flex;
+  inline-size: 100%;
+  margin-block-end: 4em;
+}
+
+
+.card {
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card::hover {
+  background-color: #fefefe
+}
+/* Add rounded corners to the top left and the top right corner of the image */
+div.star {
+  inline-size: 27%;
+  float: left;
+}
+img.cimg {
+  inline-size: 100%;
+  border-radius: 100%;
+  border: 1px #000 solid;
+}
+.container{
+  text-align: center;
+}
