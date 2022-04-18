@@ -1,0 +1,58 @@
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> krigjo25</title>
+		<meta description="Tombstone Protector" />
+		<meta name="maintainer" content="@krigjo25">
+		<meta name="edited" content="@krigjo25" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="python, django, cv">
+		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Slogan</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <section>
+
+                    <h3>{{ project.title }}</h3>
+                    <h4> Project Description</h4>
+                    <capiton>{{ project.description }}</capiton>
+                    <h4>Reposories used</h4>
+                    <span>{{ project.tech }}</span>
+                    <img src={% static project.img %} alt='' width = "100%">
+            </section>
+            <aside>
+
+                <h6>Aside information</h6>
+                <nav>
+                    <ul>
+                        <h6>Recent Projects...</h6>
+                        <li></li>
+
+                        <h6>Top 3 Projects...</h6>
+                        <li></li>
+
+                    </ul>
+
+                </nav>
+            </aside>
+        </main>
+        <footer>
+            <h3>Footer information</h3>
+        </footer>
+
+    </body>
+{% endblock %}

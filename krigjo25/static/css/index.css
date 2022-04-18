@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: wheat;
+    block-size: 100em;
+    max-inline-size: 100%;
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+}
+
+header, footer, main {
+
+    max-inline-size: 100%;
+
+}
+
+header > h1 {
+
+    text-align: center;
+}
+
+Table, td, tr {
+
+    display: inline-block;
+
+}
+
+/*              IDs         */
+
+#curve {
+
+    margin: auto;
+    max-block-size: 100%;
+    max-inline-size: 50%;
+
+}
+
+
+/*  Classes     */
+
+.ddown {
+
+    position:relative;
+    display: inline-block;
+
+}
+
+.ddownContent {
+
+    z-index: 1;
+    display: none;
+    position: absolute;
+    inline-size : 200px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+
+}
+
+.ddown:hover .ddownContent{
+
+    display: block;
+
+  }
+
+.capt {
+
+    padding: 15px;
+    text-align: center;
+
+}
+
+.btn {
+
+    border: none;
+    background-color: transparent;
+
+}
+
+.acd {
+
+    border: none;
+    color: #444;
+    padding: 18px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    inline-size: 100%;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.pnl {
+
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: White;
+
+}

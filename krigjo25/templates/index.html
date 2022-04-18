@@ -1,0 +1,71 @@
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> krigjo25</title>
+		<meta description="Tombstone Protector" />
+		<meta name="maintainer" content="@krigjo25">
+		<meta name="edited" content="@krigjo25" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="python, django, cv">
+		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" media="screen">
+    </head>
+    <body>
+        <div id="curve">
+
+            <header>
+
+                <h1> The Technology of tomorrow </h1>
+                <h1> The feature is now. </h1>
+            
+            </header>
+
+            <main>
+                <h6> Main </h6>
+                <section>
+                    <h6> Section one </h6>
+                </section>
+
+            </main>
+
+            <footer>
+                <nav>
+                    <button class = "btn acd"><strong>Portefolio</strong></button>
+
+                    <section class = "pnl">
+
+                        {% for project in MyProjects %}
+
+                        <h3>{{ project.title }}</h3>
+
+                        <div class ='ddown'>
+                            <img src={% static project.img %} alt='' width = '100px' height = '75px'>
+
+                            <div class='ddownContent'>
+
+                                            <img src={% static project.img %} alt='' width="100%">
+
+                                            <p class="capt">{{ project.description }}</p>
+                                            <h4 class = "capt">Technology used in the project</h4>
+                                            <p>{{ project.tech }}</p>
+
+                            </div>
+                        </div>
+                        <!--a href="{% url 'detail' project.pk %}">Details</a-->
+
+                        {% endfor %}
+
+                    </section>
+
+                    <button class = "btn"><strong>Blog</strong></button>
+                    <button class = "btn"><strong>Hire me</strong></button>
+                </nav>
+            </footer>
+
+        </div>
+    </body>
+
+{% endblock %}
