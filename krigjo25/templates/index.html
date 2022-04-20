@@ -1,6 +1,8 @@
 {% load static %}
 {% load sass_tags %}
-
+{% block foo %}
+   {% include "firefly.html" %}
+{% endblock %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,34 +15,13 @@
 		<meta name="keywords" content="python, django, cv">
 		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <!--link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/shootingStar.scss' %}" media="screen" /-->
-        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media = "screen">
-        <link rel= "stylesheet" type = "text/css" href = "{% static 'css/accordion.css' %}" media = "screen">
+        <link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/firefly/firefly.sass' %}" media="screen" />
+		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'css/index.sass' %}" media="screen" />
+        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'css/accordion.sass' %}" media = "screen">
     </head>
 	{% block page_content %}
 	<body>
-		<div class="night">
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-			<div class="shooting_star"></div>
-		  	</div>
+
 		<div id="curve">
 
 			<header>
@@ -89,7 +70,7 @@
 							<div class="tab-content">
 								{% for project in MyProjects %}
 	
-								<h3>{{ project.title }}</h3>
+								<h3><img src='static/img/pythonlogo.svg' alt='' width="100px">{{ project.title }}</h3>
 	
 								<div class ='ddown'>
 	
@@ -132,6 +113,7 @@
 			</footer>
 
 		</div>
+
 	</body>
 </html>
 

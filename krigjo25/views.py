@@ -17,3 +17,6 @@ def ProjectDetail(request, pk):
     context = {'MyProjects': project,}
 
     return render(request, 'projectDetail.html', context)
+
+def TestBackGround(request):
+    return render(request, 'backGroundTest.html')
