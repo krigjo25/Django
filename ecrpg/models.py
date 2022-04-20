@@ -10,5 +10,4 @@ class AdminTeam(models.Model):
     img = models.FilePathField(path = '/img')
 
 class ecrpgWiki(models.CharField):
-
     pass
