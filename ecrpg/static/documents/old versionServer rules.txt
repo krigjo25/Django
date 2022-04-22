@@ -133,7 +133,7 @@
 					1 week ban
 
 
-§4.2  	Aimbots, triggerhead, Artificial lag/lag, Parkour, Rapid 
+	§5.2  	Aimbots, triggerhead, Artificial lag/lag, Parkour, Rapid 
 		Fire Mod, macro  switch etc.. 
 
 	§4.3 	World - Hack
@@ -161,9 +161,6 @@
 		1 - 4 weeks ban + Account reset
 
 
-
-
-
 §6. Multiple accounts - Warn / reset / Ban
 		A multiple account is two or more accounts, it gives you an adventage, and its not allowed
 
@@ -174,9 +171,6 @@
 			1 day ban, accounts reset
 		3rd offense  
 			1 week ban account reset
-
-
-
 
 §7	Vehicles 	- Jail / Kick
 
@@ -201,15 +195,12 @@
 
 			3rd offence
 
-
-
 §8. Spawn killing 
 	Killing a player at spawn, before the player has spawned propperly ea 15seconds.
 
  	Automatically kicks the offender. 
 
 	Repeatedly actions will be considered as Discrimination or bullying redirect to §3.4
-
 
 §9. Random Deathmatching - Warn / kick / Jail
 	This is an RPG Server, we do not randomly kill or attack people.
@@ -230,8 +221,6 @@
 
    	3rd offense 
    		Jail 500sec
-
-
 
 §11 Virtual Private Network 
 
@@ -272,9 +261,6 @@
 				1st offense warning
 				2nd jail / kick
 				3rd 1 - 7 day(s) ban
-
-
-
 
 §13. Breaking the laws as an Authority, E.G fake suspecting/unsuspecting.
 		Goto own site for the laws of San andreas

@@ -1,4 +1,6 @@
 {% load static %}
+{% load sass_tags %}
+
 
 <!DOCTYPE html>
 	<html lang="en-us">
@@ -6,18 +8,28 @@
 		<head>
 			<!-- Meta data information-->
 			<meta charset="utf-8" />
-			<meta name="author" content="krigjo25" />
+			<title>East Coast RPG !</title>
+			<meta name="maintainer" content="krigjo25" />
 			<meta name="description" content="rpg, samp" />
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<title>East Coast RPG !</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/SanandreasPhoto.sass' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
-			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />		</head>
+		</head>
 		<body>
 			{% block page_content %}
 			<div>
 			<!-- Head of the document -->
 			<header>
-				<a href="{% url 'ecrpg' %}"><h1><span>East</span><span class="sCol">Coast</span> RPG</h1></a>
+				<a href="{% url 'ecrpg' %}">
+					<h1>
+						<span>East</span>
+						<span class="sCol">Coast</span>
+						<span>RPG</span>
+					</h1>
+				</a>
+
 				<nav>
 					<ul>
 						<li>

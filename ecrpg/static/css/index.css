@@ -10,7 +10,10 @@ header, main, footer {
 
 }
 
-
+.fa-friendly {
+  background-image: url(../svg/icons/firendlyicon.svg);
+  
+}
 body {
   color: whitesmoke;
   inline-size: 100%;
