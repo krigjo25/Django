@@ -80,6 +80,7 @@
 
 			Repeated offenses may lead to ban from the profession
 
+
 	§4.2	Exploits 
 				Exploiting a feature or a bug(s) which gives you an adventage, which is not intended in the Game Design
 
@@ -120,7 +121,7 @@
 
 §5. Bots and software assistance - Warn / Ban
 
-	§4.1 	Cheats and Hacks.
+	§5.1 	Cheats and Hacks.
 			involves a player using methods to create an advantage beyond normal gameplay, in order to make the game easier
 
 			1st offence
@@ -136,11 +137,11 @@
 	§5.2  	Aimbots, triggerhead, Artificial lag/lag, Parkour, Rapid 
 		Fire Mod, macro  switch etc.. 
 
-	§4.3 	World - Hack
+	§5.3 	World - Hack
 				What is considered as world  hack is
 				Parkour, map modifications which is not intended in the game.
 
-	§4.4	 Other modifications
+	§5.4	 Other modifications
 			e.g visual design for 
 				skin,
 				weapon,
@@ -195,14 +196,15 @@
 
 			3rd offence
 
-§8. Spawn killing 
+§9. Spawn killing 
 	Killing a player at spawn, before the player has spawned propperly ea 15seconds.
 
  	Automatically kicks the offender. 
 
 	Repeatedly actions will be considered as Discrimination or bullying redirect to §3.4
 
-§9. Random Deathmatching - Warn / kick / Jail
+§9.1 Random Deathmatching - Warn / kick / Jail
+
 	This is an RPG Server, we do not randomly kill or attack people.
 
 	Reported player
@@ -210,7 +212,7 @@
 	First offense warning / kick.
 	Second time jail 120+ seconds
 
-§10. Safe zones - warn / jail / kick
+§9.2. Safe zones - warn / jail / kick
 	Fighting conidered as punching other players in safezone
 
    	1st offense 
@@ -222,9 +224,9 @@
    	3rd offense 
    		Jail 500sec
 
-§11 Virtual Private Network 
+§10 Virtual Private Network 
 
-	§1.1 Virtual Private Network
+	§10.1 Virtual Private Network
 		Virtual Private NSetwork describes any technology that can encapsulate and transmit network data.
 		
 		VPN is not allowed, as the Network define you as a Player
@@ -242,8 +244,7 @@
 
   		Assisting other players in this case will result a day or two ban
 
-
-§12. Threats / Scam  - Jail / ban / account deletion
+§11. Threats / Scam  - Jail / ban / account deletion
 	
 	§12.1. Scam
  		( if the seller manipulates the price and sell for other price before the player writes /accept , if you agreed on a price and after few time it's not worth that much, it's not Admin's/player's fault that the price of the item wasn't asked to more exp. Player or an Admin.
@@ -262,7 +263,7 @@
 				2nd jail / kick
 				3rd 1 - 7 day(s) ban
 
-§13. Breaking the laws as an Authority, E.G fake suspecting/unsuspecting.
+§12. Breaking the laws as an Authority, E.G fake suspecting/unsuspecting.
 		Goto own site for the laws of San andreas
 		
 		1st offense warning
