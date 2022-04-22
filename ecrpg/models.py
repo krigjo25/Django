@@ -9,5 +9,14 @@ class AdminTeam(models.Model):
     boss = models.CharField(max_length=60)
     img = models.FilePathField(path = '/img')
 
-class ecrpgWiki(models.CharField):
-    pass
+class WikiCategory(models.Model):
+
+    category = models.CharField(max_length=20)
+
+class WikiPost(models.Model):
+
+    title = models.CharField(max_length=255)
+    body = models.TextField()
+    categories = models.ManyToManyField('Category', related_name='posts')
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now_add=True)

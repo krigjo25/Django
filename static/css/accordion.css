@@ -14,10 +14,11 @@ input:checked + .tab-label::after {
 
 input:checked ~ .tab-content {
   padding: 1em;
-  max-height: 7467px; }
+  max-block-size: 100%;
+  max-inline-size: 265px; }
 
-h3 {
-  text-align: center; }
+.tab-content > h3 {
+  text-align: start; }
 
 .col {
   padding-inline-end: 0px;

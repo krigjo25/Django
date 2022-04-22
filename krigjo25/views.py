@@ -1,20 +1,25 @@
 from django.shortcuts import render
-from krigjo25.models import MyProjects
+from krigjo25.models import DatabaseProjects, DiscordBots, PythonProjects
 
 def webIndex(request):
 
     #   Initializing the database connection
-    project = MyProjects.objects.all()
+    dBotRepo = DiscordBots.objects.all()
+    mdb = DatabaseProjects.objects.all()
+    
     context = {
-                'MyProjects': project,
+                'databases':mdb,
+                'dBots': dBotRepo,
+                
 }
 
     return render(request, 'index.html', context)
 
+
 def ProjectDetail(request, pk):
 
-    project = MyProjects.objects.get(pk=pk)
-    context = {'MyProjects': project,}
+    project = PythonProjects.objects.get(pk=pk)
+    context = {'PythonProjects': project,}
 
     return render(request, 'projectDetail.html', context)
 

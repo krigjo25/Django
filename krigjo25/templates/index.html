@@ -62,38 +62,45 @@
 	
 						<div class="tabs">
 	
-						  <div class="tab">
+							<div class="tab">
 	
-							<input type="radio" id="rd1" name="rd">
-							<label class="tab-label" for="rd1">Portefolio</label>
-	
-							<div class="tab-content">
-								{% for project in MyProjects %}
-	
-								<h3><img src='static/img/pythonlogo.svg' alt='' width="100px">{{ project.title }}</h3>
-	
-								<div class ='ddown'>
-	
-									<img src={% static project.img %} alt='' width = '100px' height = '75px'>
-		
-									<div class='ddownContent'>
-		
-													<img src={% static project.img %} alt='' width="100%">
-		
-													<p class="capt">{{ project.description }}</p>
-													<h3 class = "capt">Technology used in the project</h3>
-													<p>{{ project.tech }}</p>
-		
-									</div>
-	
+								<input type="radio" id="rd1" name="rd">
+								<label class="tab-label" for="rd1">Discord Bots</label>
+								
+								<div class="tab-content">
+									{% for rp in dBots %}
+									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
+
+									<span class="capt">{{ rp.description }}</span>
+
+									{% endfor %}
 								</div>
-								<!--a href="{% url 'detail' project.pk %}">Details</a-->
 		
-								{% endfor %}
 							</div>
+
+							<div class="tab">
 	
-						  </div>
-	
+								<input type="radio" id="rd2" name="rd">
+								<label class="tab-label" for="rd2">Databases</label>
+
+								<div class="tab-content">
+
+									{% for rp in mdb %}
+									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
+
+									<span class="capt">{{ rp.description }}</span>
+
+									{% endfor %}
+
+								</div>
+
+									<a href=""><h3><img src={% static rp.img %} alt='' width="100px"></h3></a>
+
+									<span class="capt"></span>
+
+
+								</div>
+
 						  <div class="tab">
 	
 							<input type="radio" id="rd3" name="rd">
@@ -101,12 +108,12 @@
 	
 						</div>
 						</div>
-					  </div>
-	
-					
+					</div>
+
+
 					<div class="tab">
 					<label class="tab-label col"><a href='/blog'>Blog</a></label>
-					<label class="tab-label col"><a href='www.vg.no'>Hire Me</a></label>
+					<label class="tab-label col"><a href='mailto:krigjo25@gmail.com'>Hire Me</a></label>
 					</div>
 				</section>
 				</nav>
