@@ -68,7 +68,9 @@
 								<label class="tab-label" for="rd1">Discord Bots</label>
 								
 								<div class="tab-content">
+
 									{% for rp in dBots %}
+
 									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
 
 									<span class="capt">{{ rp.description }}</span>
@@ -85,10 +87,11 @@
 
 								<div class="tab-content">
 
-									{% for rp in mdb %}
-									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
+									{% for db in databases %}
 
-									<span class="capt">{{ rp.description }}</span>
+									<a href="{{ db.link }}"><h3><img src={% static db.img %} alt='' width="100px">{{ db.title }}</h3></a>
+
+									<span class="capt">{{ db.description }}</span>
 
 									{% endfor %}
 
