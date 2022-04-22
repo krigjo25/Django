@@ -1,4 +1,17 @@
 {% load static %}
+{% load sass_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title> krigjo25</title>
+		<meta description="Tombstone Protector" />
+		<meta name="maintainer" content="@krigjo25">
+		<meta name="edited" content="@krigjo25" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="python, django, cv">
+		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
 
 <!DOCTYPE html>
 	<html lang="en-us">
@@ -6,35 +19,44 @@
 		<head>
 			<!-- Meta data information-->
 			<meta charset="utf-8" />
+			<title>East Coast RPG !</title>
 			<meta name="author" content="krigjo25" />
 			<meta name="description" content="rpg, samp" />
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<title>East Coast RPG !</title>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/SanandreasPhoto.sass' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
 		</head>
 
 		<body>
 			<div>
-			<!-- Head of the document -->
+
 			<header>
+
 				<h1>
-					<a href="{% url 'index' %}"><span></span>East<span class="sCol">Coast</span> RPG</a>
+					<a href="{% url 'ecrpg' %}">East<span class="sCol">Coast</span> RPG</a>
 				</h1>
+
 				<nav>
+
 					<ul>
+
 						<li>
-						<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
+							<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
 						</li>
+
 						<li> 
 							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static 'img/samp.png' %}" class="samp"></a>
 						</li>
+
 					</ul>
+
 				</nav>
+
 			</header>
-			<!-- Middle of the document -->
+
 			<main>
-				<!-- Head of the content -->
+
 					<article>
 						<p>Welcome to the community, we're thrilled to enjoy the game with you. 
 						Feel free to join ourcommunity at Discord</p>
@@ -63,8 +85,8 @@
 							<ul>
 								<a href="{% url 'managementTeam' %}"><li class="btn">- The Admin team</li></a>
 								<a href="{% url 'managementTeam' %}"><li class="btn">- Banned players</li></a>
-								<a href="{% url 'managementTeam' %}"><li class="btn">- Community Rules</li></a>
-								<a href="{% url 'managementTeam' %}"><li class="btn">- EastCoast Wiki</li></a>
+								<a href="{% url 'rules' %}"><li class="btn">- Community Rules</li></a>
+								<a href="{% url 'gameWiki' %}"><li class="btn">- EastCoast Wiki</li></a>
 							</ul>
 						</nav>
 					</article>
@@ -88,16 +110,22 @@
 						</nav>
 					</article>
 			</main>
+
 			<footer>
-					<p>
-							EastCoast RPG by <span>Kennzo</span> © | <div class="btn"> Donate</div>
-					</p>
-				<cite>
-					The website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
+
+				<p>
+					EastCoast RPG by <span>Kennzo</span> © | <div class="btn"> Donate</div>
+				</p>
+
+			<cite>
+					This website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
 					Grand Theft Auto and Grand Theft Auto: San Andreas are registered trademarks of Take-Two Interactive Software Inc.
-				</cite>
-			</footer>
-			</article>
-			</div>
-		</body>
-	</html>
+			</cite>
+
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

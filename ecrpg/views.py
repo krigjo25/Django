@@ -3,8 +3,14 @@ from django.shortcuts import render
 from ecrpg.models import  ManagementTeam, ManagementTeamlvl2, ManagementTeamlvl3, ManagementTeamHelper
 # Create your views here.
 def EcrpgIndex(request):
-
     return render(request, 'ecrpg.html')
+
+def CommunityRules(request):
+        return render(request, 'comrules.html')
+
+def GameWiki(request):
+
+        return render(request, 'gameWiki.html')
 
 def AdminTeam(request):
 

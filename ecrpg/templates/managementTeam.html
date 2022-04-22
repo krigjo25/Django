@@ -17,7 +17,7 @@
 			<div>
 			<!-- Head of the document -->
 			<header>
-				<a href="{% url 'index' %}"><h1><span>East</span><span class="sCol">Coast</span> RPG</h1></a>
+				<a href="{% url 'ecrpg' %}"><h1><span>East</span><span class="sCol">Coast</span> RPG</h1></a>
 				<nav>
 					<ul>
 						<li>
@@ -31,11 +31,12 @@
 			</header>
 			<!-- Middle of the document -->
 			<main>
+				<h2> Admin Level 3</h2>
 				<section>
-					<h2> Admin Level 3</h2>
 
+					{% for lvl3 in admin3 %}
 					<article class="lvl3">
-						{% for lvl3 in admin3 %}
+						
 
 						<div class="card">
 							
@@ -57,8 +58,9 @@
     				</article>
 					{% endfor %}
 				</section>
+				<h2> Admin Level 2</h2>
 				<section>
-					<h2> Admin Level 2</h2>
+					
 
 					<article class="lvl2">
 						{% for lvl2 in admin2 %}
@@ -83,12 +85,11 @@
 					{% endfor %}
 				</section>
 
+				<h2> Admin Level 1</h2>
 				<section>
 
-					<h2> Admin Level 1</h2>
-
-					<article class="lvl3">
-						{% for lvl in admin3 %}
+					<article class="lvl">
+						{% for lvl in admin %}
 
 						<div class="card">
 							
@@ -97,8 +98,6 @@
 							
     						<div>
 
-    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
-								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
     							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
     						</div>
 							<img src={% static lvl.img %} alt="Avatar" class="cimg">
@@ -111,8 +110,8 @@
 					{% endfor %}
 				</section>
 
+				<h2> Helper team</h2>
 				<section>
-					<h2> Helper team</h2>
 						
 						<article class="helper">
 							{% for h in helper %}

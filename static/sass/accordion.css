@@ -34,7 +34,8 @@ input:checked ~ .tab-content {
 .tab {
   width: 100%;
   color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5); }
 
 .tab-label {
   padding: 1em;
@@ -42,8 +43,7 @@ input:checked ~ .tab-content {
   cursor: pointer;
   font-weight: bold;
   background: transparent;
-  justify-content: space-between;
-  box-shadow: 0px 4px 26px 5px rgba(0, 0, 0, 0.5); }
+  justify-content: space-around; }
 
 .tab-label:hover {
   background-color: rgba(255, 255, 255, 0.1); }

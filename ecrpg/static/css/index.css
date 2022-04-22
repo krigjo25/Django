@@ -3,15 +3,9 @@
   box-sizing: border-box;
 }
 
-html {
-  block-size: 100%;
-  inline-size: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(../img/gta-san-andreas-multiplayer-samp.jpg);
-}
 header, main, footer {
+  inline-size: 100%;
+  text-align: center;
   display: inline-block;
 
 }
@@ -26,6 +20,10 @@ body {
   writing-mode: horizontal-tb;
   background-color:transparent;
 }
+h1, h2, h3,h4,h5,h6 {
+  color:#b38a6d;
+}
+
 h1 {
   font-size: 16px;
 }
@@ -33,9 +31,6 @@ h1 span:nth-child(1) {
   color: #fafafa;
 }
 
-h1 span:nth-child(2) {
-  color: #b38a6d;
-}
 
 header a {
   color: #fafafa;
