@@ -20,5 +20,6 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', include('krigjo25.urls')),
+    path('ecrpg/', include('ecrpg.urls')),
 
 ]

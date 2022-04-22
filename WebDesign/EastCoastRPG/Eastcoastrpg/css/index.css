@@ -61,10 +61,7 @@ main h3 {
 
 main h3 nav {
   column-count: 2;
-  column: 3.125em 2;
-}
-
-main h3 nav a::link {
+  columns: 3.125em 2;
 }
 
 main h3 nav li {
@@ -131,6 +128,6 @@ footer cite {
 
 .test {
   inline-size: 100%;
-  inline-size-margin-block-end: 3em;
-  inline-size-margin-block-start: 3em;
+  margin-block-end: 3em;
+  margin-block-start: 3em;
 }

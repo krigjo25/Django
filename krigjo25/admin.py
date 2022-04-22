@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from krigjo25.models import BlogCategory, BlogPost
 
-# Register your models here.
+
 class PostAdmin (admin.ModelAdmin):
     pass
 

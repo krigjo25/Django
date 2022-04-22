@@ -1,0 +1,147 @@
+{% load static %}
+
+<!DOCTYPE html>
+	<html lang="en-us">
+			<!-- Infomation about the head-->
+		<head>
+			<!-- Meta data information-->
+			<meta charset="utf-8" />
+			<meta name="author" content="krigjo25" />
+			<meta name="description" content="rpg, samp" />
+			<meta name="viewport" content="width=device-width, initial-scale=1"/>
+			<title>East Coast RPG !</title>
+			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />		</head>
+		<body>
+			{% block page_content %}
+			<div>
+			<!-- Head of the document -->
+			<header>
+				<a href="{% url 'index' %}"><h1><span>East</span><span class="sCol">Coast</span> RPG</h1></a>
+				<nav>
+					<ul>
+						<li>
+						<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
+						</li>
+						<li> 
+							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static '/img/samp.png' %}" class="samp"></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Middle of the document -->
+			<main>
+				<section>
+					<h2> Admin Level 3</h2>
+
+					<article class="lvl3">
+						{% for lvl3 in admin3 %}
+
+						<div class="card">
+							
+ 						<div class="container">
+    						<h4><b>{{lvl3.memberName}}</b></h4>
+							
+    						<div>
+
+    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
+    						</div>
+							<img src={% static lvl3.img %} alt="Avatar" class="cimg">
+    						<!-- If the admin is offilne,
+    							Show last online date in red-->
+    						<p>online / offline</p>
+    						<p><strong>Boss :</strong> {{lvl3.boss}}</p>
+    					</div>
+    				</article>
+					{% endfor %}
+				</section>
+				<section>
+					<h2> Admin Level 2</h2>
+
+					<article class="lvl2">
+						{% for lvl2 in admin2 %}
+
+						<div class="card">
+							
+ 						<div class="container">
+    						<h4><b>{{lvl2.memberName}}</b></h4>
+							
+    						<div>
+								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
+    						</div>
+
+							<img src={% static lvl2.img %} alt="Avatar" class="cimg">
+    						<!-- If the admin is offilne,
+    							Show last online date in red-->
+    						<p>online / offline</p>
+    						<p><strong>Boss :</strong> {{lvl2.boss}}</p>
+    					</div>
+    				</article>
+					{% endfor %}
+				</section>
+
+				<section>
+
+					<h2> Admin Level 1</h2>
+
+					<article class="lvl3">
+						{% for lvl in admin3 %}
+
+						<div class="card">
+							
+ 						<div class="container">
+    						<h4><b>{{lvl.memberName}}</b></h4>
+							
+    						<div>
+
+    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
+    						</div>
+							<img src={% static lvl.img %} alt="Avatar" class="cimg">
+    						<!-- If the admin is offilne,
+    							Show last online date in red-->
+    						<p>online / offline</p>
+    						<p><strong>Boss :</strong> {{lvl.boss}}</p>
+    					</div>
+    				</article>
+					{% endfor %}
+				</section>
+
+				<section>
+					<h2> Helper team</h2>
+						
+						<article class="helper">
+							{% for h in helper %}
+							<div class="card">
+								
+							 <div class="container">
+								<h4><b>{{h.memberName}}</b></h4>
+
+								<img src={% static h.img %} alt="Avatar" class="cimg">
+								<!-- If the admin is offilne,
+									Show last online date in red-->
+								<p>online / offline</p>
+								<p><strong>Boss :</strong> {{h.boss}}</p>
+							</div>
+						</article>
+						{% endfor %}
+				</section>
+			</main>
+			<footer>
+					<p>
+							EastCoast RPG by <span>Kennzo</span> © | <div class="btn"> Donate</div>
+					</p>
+				<cite>
+					This website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
+					Grand Theft Auto and Grand Theft Auto: San Andreas are registered trademarks of Take-Two Interactive Software Inc.
+				</cite>
+			</footer>
+			</article>
+			</div>
+			{% endblock %}
+		</body>
+	</html>
