@@ -24,6 +24,7 @@ def ProjectDetail(request, pk):
 
     return render(request, 'projectDetail.html', context)
 
+#   The blog page
 def BlogIndex(request):
 
     blogPost = BlogPost.objects.all().order_by('-created')
@@ -51,10 +52,11 @@ def BlogDetails(request, pk):
     context = {
                 'BlogPost':blogPost,
                 'BlogComments':cmts,
-                
+
 
 }  
     return render(request, 'blogDetails.html', context)
+
 #   Testing
 def TestBackGround(request):
     return render(request, 'backGroundTest.html')
