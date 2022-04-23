@@ -1,7 +1,6 @@
 {% load static %}
 {% load sass_tags %}
 
-
 <!DOCTYPE html>
 	<html lang="en-us">
 			<!-- Infomation about the head-->
@@ -14,12 +13,22 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/accordion.sass' %}" media="screen" />
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/SanandreasPhoto.sass' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/dodecahedron/dodecahedron.sass' %}" media="screen" />
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
 		</head>
 
 		<body>
 
+			<div class="view">
+				<div class="plane main">
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				</div>
+			  </div>
 
 			<header>
 
@@ -228,7 +237,7 @@
 							<div class="tab">
 								<input type="radio" id="rd4" name="rd" \>
 								<label class="tab-label" for="rd4">§4. Unsupporting play - <b>Warn</b> /<b>Jail</b> / <b>Ban</b></label>
-
+								
 								<div class="tab-content">
 
 									<h3>§4.1	Boosting / Win trading </h3>
@@ -254,69 +263,65 @@
 
 									<p>Repeated offenses may lead to ban from the profession</p>
 
-									<h3>§4.2	Exploits</h3> 
-									<span class="capt">Exploit Example :</span>
+									<h3>§4.2  bot and Software assistance</h3>
+									<span class="capt"> 
 
-									<ol>
+										a player using methods to create an advantage beyond normal gameplay, in order to make the game easier.
+										in the server we allow visual design modifications and <b> keybinds</b>, if you're not sure what this includes, cosult an admin
+										This includes exploiting feautures or bugs which is not intended in the game, please use common sense and play fair.
 
-										<li>
-											Farming Ecash, spawnkilling armour (e.g using limo, event amrour / health)
-										</li>
-
-										<li>
-											Quitting to avoid death
-										</li>
-
-										<li>
-											Using, lifefoot, c-bug, slidebug, 2shots, floorbug
-										</li>
-									</ol>
-
+									</span>
+									
 									<ol>
 										<li>
-											<b>1st offence</b> Verbal Warning.
+											<b>1st offence</b>, Verbal Warning, kick
 										</li>
-
+		
 										<li>
-											<b>2nd offence</b>, logged Warning & 300sec Jail
+												<b>2nd offence</b> logged Warning / 1 week ban
 										</li>
-
+		
 										<li>
-											<b>3rd offence</b>account reset & 600sec jail time
+												<b>3rd offence</b> 1 - 4 weeks ban + Account reset
 										</li>
-
+		
 									</ol>
 
 
-									<h3>§4.3  	Modifications</h3>
-
-									<h3>§4.4	Using real life currency</h3>
+									<h3>§4.3	Using real life currency</h3>
 
 										<span class="capt">
 											Selling accouunt / items / Ecash or Betting.
 										</span>
 
+									<h3>§4.4	Advertising</h3>
+
+										<span class="capt">
+											For advetisements, you've to request the server owner, for partnership uppertunity, otherwise it will result in a ban.
+										</span>
+
 									<ol>
+
 										<li>
-											<b>1st offence</b> Verbal Warning.
+											<b>1st offence</b>, Verbal Warning.
 										</li>
 		
 										<li>
-												<b>2nd offence</b> logged Warning & item / ecash reset
+												<b>2nd offence</b>, logged Warning & item / ecash reset
 										</li>
 		
 										<li>
-												<b>3rd offence</b> 1 week ban + item / ecash reset
+												<b>3rd offence</b>, 1 week ban + item / ecash reset
 										</li>
 		
 									</ol>
 								</div>
 							</div>
-5
+
 							<div class="tab">
 
-								<input type="radio" id="rd6" name="rd">
-								<label class="tab-label" for="rd6">§6. MultiPle accounts - <b>Warn</b> /<b>Reset</b> / <b>Ban</b></label>
+								<input type="radio" id="rd5" name="rd">
+								<label class="tab-label" for="rd5">§5. MultiPle accounts - <b>Warn</b> /<b>Reset</b> / <b>Ban</b></label>
 
 								<div class="tab-content">
 
@@ -342,15 +347,15 @@
 7
 							<div class="tab">
 								<input type="radio" id="rd8" name="rd" \>
-								<label class="tab-label" for="rd8">§8. Random Deathmatching, spawnkilling & Fighting in safe zones - <b>Warn</b> /<b>Jail</b> / <b>Kick</b></label>
+								<label class="tab-label" for="rd8">§8. Deathmatch & killingRandom Deathmatching, spawnkilling & Fighting in safe zones - <b>Warn</b> /<b>Jail</b> / <b>Kick</b></label>
 
 								<div class="tab-content">
 
-									<h3>§8.1 Random Death Matching</h3>
+									<h3>§8.1 Death Matching</h3>
 
 									<span class="capt"> 
-
-										This is an RPG Server, we do not randomly kill or attack people.
+										Deathmatch considered as randomly killing / attacking other players
+										with out a proper job to do so. This does not mean you can defend your self.
 
 									</span>
 
@@ -369,7 +374,7 @@
 
 									</ol>
 
-									<h3>§8.3 Attacking fighting in safezone</h3>
+									<h3>§8.2 Attacking fighting in safezone</h3>
 
 									<span class="capt">
 
@@ -394,8 +399,11 @@
 									
 									<p>Repeated offenses may lead to ban from the profession</p>
 
-									<h3>§8.2	SpawnKilling</h3> 
-									<span class="capt">Spawn killing considered when you camping at the spawn to kill a player</span>
+									<h3>§8.3 SpawnKilling</h3> 
+									<span class="capt">
+										Spawn killing considered when you camping, and attacking a player under spawn. at the spawn to kill a player
+
+									</span>
 
 									<ol>
 
@@ -413,17 +421,59 @@
 
 									</ol>
 
+									<h3>§8.4 Vehicle </h3>
+									<h3>6.1 	Grand theft auto in vehicle registrations  or other forbidden places</h3>
+
+									<ol>
+
+										<li>
+											<b>1st offence</b>, Kick / 300sec in Jail & vehicle reset
+										</li>
+
+										<li>
+											<b>2nd offence</b>, Kick / 600sec Jail + vehicle reset
+										</li>
+
+										<li>
+											<b>3rd offence</b>, 1 Day ban.
+										</li>
+
+									</ol>
+
+									<h3>§6.2 Vehicle kill</h3>
+
+									<span class="capt">
+										Automatically kicked from the server, and suspected.
+
+									</span>
+
+									<ol>
+
+										<li>
+											<b>1st offence</b> kick & Automatically suspected
+										</li>
+
+										<li>
+											<b>repeated offence</b>, jail
+										</li>
+
+										<li>
+											<b>3rd offence</b>
+										</li>
+
+									</ol>
+									
 								</div>
 							</div>
 
 							<div class="tab">
 
-								<input type="radio" id="rd9" name="rd" \>
-								<label class="tab-label" for="rd9">§9 Network  <b>Warn</b> /<b>Jail</b> / <b>Kick</b></label>
+								<input type="radio" id="rd7" name="rd" \>
+								<label class="tab-label" for="rd7">§7 Network  <b>Warn</b> /<b>Jail</b> / <b>Kick</b></label>
 
 								<div class="tab-content">
 
-									<h3>§9.1 Virtual Private Network</h3>
+									<h3>§7.1 Virtual Private Network</h3>
 
 									<span class="capt">
 										Virtual Private NSetwork describes any technology
@@ -456,12 +506,12 @@
 
 							<div class="tab">
 
-								<input type="radio" id="rd10" name="rd" \>
-								<label class="tab-label" for="rd10">§10. Threats / Scam -  <b>Jail</b> /<b>Ban</b> / <b>Account deletion</b></label>
+								<input type="radio" id="rd8" name="rd" \>
+								<label class="tab-label" for="rd8">§8. Threats / Scam -  <b>Jail</b> /<b>Ban</b> / <b>Account deletion</b></label>
 
 								<div class="tab-content">
 
-									<h3>§10.1. Scam</h3>
+									<h3>§8.1. Scam</h3>
 
 									<span class="capt">
 										if the seller manipulates the price and sell for other price before the player writes /accept, 
@@ -485,7 +535,7 @@
 		
 									</ol>
 						   
-							   <h3>§10.2 	Threats towards server and player</h3>
+							   <h3>§8.2 	Threats towards server and player</h3>
 
 									<span class="capt">
 										A fearfull action, this also includes black mail
@@ -510,8 +560,8 @@
 
 							<div class="tab">
 
-								<input type="radio" id="rd11" name="rd" \>
-								<label class="tab-label" for="rd11">§11. Breaking the laws as an Authority, E.G fake suspecting/unsuspecting.</label>
+								<input type="radio" id="rd9" name="rd" \>
+								<label class="tab-label" for="rd9">§9. Breaking the laws as Authority, E.G fake suspecting/unsuspecting.</label>
 
 								<div class="tab-content">
 
@@ -536,14 +586,12 @@
 						</div>
 
 					</div>
-					
-				
 
 				</section>
 				
 				<section>
 
-					<h2>Community Rules</h2>
+					<h2>Discord Community Rules</h2>
 
 					<div class="col">
 	
@@ -551,30 +599,40 @@
 	
 							<div class="tab">
 	
-								<input type="radio" id="rd1" name="rd">
-								<label class="tab-label" for="rd1">§1. Language - <b>Warn</b> / <b>Jail</b> / <b>Mute</b></label>
+								<input type="radio" id="rd10" name="rd">
+								<label class="tab-label" for="rd10">§1. Discord Community <b>Warn</b> / <b>Jail</b> / <b>Mute</b></label>
 								
 								<div class="tab-content">
 
 									<span class="capt">
-										Native languages are allowed, 
-										but in the globalchat we use english so everyone
-										can be included in the convosation / understand you
+										We follow the game rules, inside the community server also, its a part of the game.
+
+									</span>
+						
+									<h3>§ 1.1 #server-chat</h3>
+									
+									<span class="capt"> 
+										To speak in this channel you need to be Whitelisted. To get this rank please pm Woody.
+									</span>
+
+									<h3>§ 1.2 Whitelistet rules</h3>
+									<span class="capt">
+										- Respect server rules 
+										- Emoji aren't allowed 
+										- Don't mention players 
+										- If you are online in game, don't use this channel
+										- Some characters aren't supported, don't abuse of them please
+										- Be careful, if your sentence is too long, the sentence can't be send</span>
+										When you are whitelisted make sure you follow the following rules:
+
 									</span>
 
 									<ol>
 
 										<li>
-											<b>st offence</b>,  -	Warning
+											<p>If you do not comply the rules, you might be <strong>Removed, muted or banned from the server channels / server </strong></p>
 										</li>
 
-										<li>
-											<b>nd offence</b>, Jail. - 300 sec
-										</li>
-
-										<li>
-											<b>rd offence</b>, mute 1-5 min
-										</li>
 							
 									</ol>
 
@@ -585,6 +643,8 @@
 					</div>
 				</section>
 
+				<p><strong>A last note :</strong> These punishments are only etter eller annet, Punishments which requires account reset, other type of resets or bans will be discussed between the admins</p>
+				<p>Please follow the given rules, they're common sense, play fair and do to others what you'd like them to do with you.</p>
 			</main>
 
 			<footer>

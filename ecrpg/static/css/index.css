@@ -1,4 +1,9 @@
 /*					Iphone 5/SE 				*/
+@font-face {
+  font-family: "pricedown";
+  src: url("../font/pricedown bl.ttf") format(ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,10 +15,6 @@ header, main, footer {
 
 }
 
-.fa-friendly {
-  background-image: url(../svg/icons/firendlyicon.svg);
-  
-}
 body {
   color: whitesmoke;
   inline-size: 100%;
@@ -21,25 +22,19 @@ body {
   margin-inline-end: auto;
   margin-inline-start: auto;
   writing-mode: horizontal-tb;
-  background-color:transparent;
-}
-h1, h2, h3,h4,h5,h6 {
-  color:#b38a6d;
+
 }
 
 h1 {
   font-size: 16px;
 }
-h1 span:nth-child(1) {
-  color: #fafafa;
+
+header h1 span {
+  color: #b38a6d;
 }
 
 
-header a {
-  color: #fafafa;
-  text-decoration: none;
-}
-header a:hover {
+header a, header a:hover {
   color: #fafafa;
   text-decoration: none;
 }
@@ -55,13 +50,18 @@ header ul {
   margin-inline-start: auto;
 }
 
-header li {
+header ul li {
   inline-size: 8em;
+  
 }
 
+main ul li {
+  list-style: none;
+}
 main article {
   margin-block-end: 2em;
 }
+
 main > article > ul {
   text-align: center;
 }
@@ -93,9 +93,10 @@ main div.cap {
 
 main li.btn {
   padding: 11px;
-  color: white;
+  color:whitesmoke;
   font-size: 15px;
   inline-size: 48%;
+  font-weight: bold;
   border-radius: 5px;
   margin-block-end: 0.43em;
   margin-inline-end: 0.2em;
@@ -125,9 +126,8 @@ nav ul li {
 }
 
 div.cap p {
-  font-size: 1.1em;
   inline-size: 16em;
-  text-align: justify;
+  padding: 16px 0;
 }
 
 footer p {
@@ -144,7 +144,10 @@ footer p span {
 footer cite {
   font-size: 0.9em;
 }
-
+footer button {
+  background-color:transparent;
+  border: none;
+}
 .samp {
   inline-size: 4em;
   margin-inline-start: 4em;

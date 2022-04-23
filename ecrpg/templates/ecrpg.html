@@ -14,12 +14,22 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/SanandreasPhoto.sass' %}" media="screen" />
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/dodecahedron/dodecahedron.sass' %}" media="screen" />
+			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
 		</head>
 
 		<body>
-			<div>
+			<div class="view">
+				<div class="plane main">
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				  <div class="circle"></div>
+				</div>
+			  </div>
 
 			<header>
 
@@ -42,29 +52,32 @@
 					</ul>
 
 				</nav>
-
+				<section id="slideshow">
+					<div class="entire-content">
+						<div class="content-carrousel">
+							<figure class="shadow"><img src="{% static 'img/screens/sa-mp-003.png' %}"/></figure>
+							<figure class="shadow"><img src="{% static 'img/screens/sa-mp-022.png' %}"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+							<figure class="shadow"><img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+				</div>
+				</div>
+				</section>
 			</header>
 
 			<main>
 
 					<article>
 
-						<p>Get ready for a New world of San Andreas EastCoast RPG
+						<p>
+							Get ready for a New world of San Andreas EastCoast RPG
 							is a roleplay based gameplay in San andreas multiplayer
-							and it has been online since 2020. We've got features like</p>
-						<ul>
-							<li><i class="fa-thin fa-swords"></i>Clan Wars	-	Up to 10 terretories to conquer</li>
-							<li><i class="fa-duotone fa-briefcase-blank"></i>Jobs	-	50+ Jobs to experience, sided mini missions to experience</li>
-							<li><i class="fa-duotone fa-calendar"></i>Creative events</li>
-							<li><i class='fa-friendly'></i>Unique envoironment</li>
-							<li><i class="fa-solid fa-palette"></i></i>Creative managementTeam</li>
-							<li><i class="fa-duotone fa-masks-theater"></i>A roleplay experience</li>
-						</ul>
-
-						<h3> EastCoast Integerty Awards 3 players</h3>
-						<div></div>
-						<div></div>
-						<div></div>
+							and it has been online since 2020.
+						</p>
 					</article>
 					<article>
 						<h3> Server Information</h3>
@@ -104,10 +117,9 @@
 					</article>
 					<article>
 
-						<p>
-							Thank you for visiting the community website, 
+						<p>Thank you for visiting the community website, 
 							we're thrilled to enjoy the game with you and
-							feel free to join our community at Discord
+							 feel free to join our community at Discord
 						</p>
 
 					</article>
@@ -116,7 +128,7 @@
 			<footer>
 
 				<p>
-					EastCoast RPG by <span>Kennzo</span> © | <div class="btn"> Donate</div>
+					EastCoast RPG by <span>Kennzo</span> © | <a href='#'><button><img src= "{% static 'svg/icons/dontate.svg' %}" width="30px"></button></a>
 				</p>
 
 			<cite>

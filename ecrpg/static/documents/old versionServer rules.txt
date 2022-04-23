@@ -81,29 +81,22 @@
 			Repeated offenses may lead to ban from the profession
 
 
-	§4.2	Exploits 
-				Exploiting a feature or a bug(s) which gives you an adventage, which is not intended in the Game Design
+	§4.2  bot and Software assistance
+			involves a player using methods to create an advantage beyond normal gameplay, in order to make the game easier.
 
-				Exploit Example :
-					Farming Ecash,  
-					Spawn kill,
-					* Farming Armour,
-					(e.g. Using limo, event armour / health)
-					Quitting to avoid death,
-					* lifefoot,
-					* C-bug, slidebug, 2shots, floorbug,
+			in the server we allow visual design modifications and <b> keybinds</b>,if you're not sure what this includes, cosult an admin
 
+			This includes exploiting feautures or bugs which is not intended in the game, please use common sense.
 
-			1st Offence 
-			Verbal warning
+					1st offence
+			Verbal warning, kick.
 
-			2nd Offence
-			logged Warning + Jail 300sec
+		2nd offence 
 
-			3rd Offence
-			account reset + Jail 600sec
+			logged Warning / 1 week ban
 
-	§4.3  	Modifications
+		3rd offense  
+		1 - 4 weeks ban + Account reset
 
 	§4.4	Using real life currency
 			Selling accouunt / items / Ecash / Betting.
@@ -119,50 +112,8 @@
 					1 week ban + item / ecash reset
 
 
-§5. Bots and software assistance - Warn / Ban
 
-	§5.1 	Cheats and Hacks.
-			involves a player using methods to create an advantage beyond normal gameplay, in order to make the game easier
-
-			1st offence
-					verbal Warning
-
-				2nd offence
-					logged warning
-
-				3rd offence
-					1 week ban
-
-
-	§5.2  	Aimbots, triggerhead, Artificial lag/lag, Parkour, Rapid 
-		Fire Mod, macro  switch etc.. 
-
-	§5.3 	World - Hack
-				What is considered as world  hack is
-				Parkour, map modifications which is not intended in the game.
-
-	§5.4	 Other modifications
-			e.g visual design for 
-				skin,
-				weapon,
-				vehicle,
-				house,
-				map,
-				keybinds
-
-		Is allowed, unless they gives you an adventage
-		Keybind is allowed, ASI loader loaders, 
-
-		1st offence
-			Verbal warning, kick.
-
-		2nd offence 
-			logged Warning / 1 week ban
-		3rd offense  
-		1 - 4 weeks ban + Account reset
-
-
-§6. Multiple accounts - Warn / reset / Ban
+§5. Multiple accounts - Warn / reset / Ban
 		A multiple account is two or more accounts, it gives you an adventage, and its not allowed
 
 
@@ -173,9 +124,9 @@
 		3rd offense  
 			1 week ban account reset
 
-§7	Vehicles 	- Jail / Kick
+§6	Vehicles 	- Jail / Kick
 
-	§7.1 	Grand theft auto in vehicle registrations  or other forbidden places 
+	§6.1 	Grand theft auto in vehicle registrations  or other forbidden places 
 
 			1st offense 
 				Kick / 300sec Jail + vehicle reset
@@ -184,7 +135,7 @@
 			3rd offense 
 				1 Day ban.
 
-	§7.2 Vehicle kill 
+	§6.2 Vehicle kill 
 
 		Automatically kicked from the server, and suspected.
 
@@ -196,33 +147,33 @@
 
 			3rd offence
 
-§9. Spawn killing 
+§7. Spawn killing 
 	Killing a player at spawn, before the player has spawned propperly ea 15seconds.
 
  	Automatically kicks the offender. 
 
 	Repeatedly actions will be considered as Discrimination or bullying redirect to §3.4
 
-§9.1 Random Deathmatching - Warn / kick / Jail
+	§7.1 Random Deathmatching - Warn / kick / Jail
 
-	This is an RPG Server, we do not randomly kill or attack people.
+		This is an RPG Server, we do not randomly kill or attack people.
 
-	Reported player
+		Reported player
 
-	First offense warning / kick.
-	Second time jail 120+ seconds
+		First offense warning / kick.
+		Second time jail 120+ seconds
 
-§9.2. Safe zones - warn / jail / kick
-	Fighting conidered as punching other players in safezone
+	§7.2. Safe zones - warn / jail / kick
+		Fighting conidered as punching other players in safezone
 
-   	1st offense 
-   		Warning / slap
+		1st offense 
+			Warning / slap
 
-  	2nd offense 
-  		kick / jail 120+ seconds
+		2nd offense 
+			kick / jail 120+ seconds
 
-   	3rd offense 
-   		Jail 500sec
+		3rd offense 
+			Jail 500sec
 
 §10 Virtual Private Network 
 
