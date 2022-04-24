@@ -13,7 +13,6 @@
 			<meta name="description" content="rpg, samp" />
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/SanandreasPhoto.sass' %}" media="screen" />
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
 		</head>
@@ -142,17 +141,7 @@
 						{% endfor %}
 				</section>
 			</main>
-			<footer>
-					<p>
-							EastCoast RPG by <span>Kennzo</span> © | <div class="btn"> Donate</div>
-					</p>
-				<cite>
-					This website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
-					Grand Theft Auto and Grand Theft Auto: San Andreas are registered trademarks of Take-Two Interactive Software Inc.
-				</cite>
-			</footer>
-			</article>
-			</div>
+			{% include 'footer.html' %}
 			{% endblock %}
 		</body>
 	</html>

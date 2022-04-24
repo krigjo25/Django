@@ -1,6 +1,6 @@
 {% load static %}
+{% load sass_tags %}
 
-{% include 'template/dodecahedron/dodecahedron.html' %}
 
 <!DOCTYPE html>
 	<html lang="en-us">
@@ -15,14 +15,12 @@
 			<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
-
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass %}" media="screen"/>
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
 		</head>
 
 		<body>
-
-			  </div>
-
+			{% include 'template/dodecahedron/dodecahedron.html' %}
 			<header>
 
 				<h1>
@@ -117,21 +115,8 @@
 					</article>
 			</main>
 
-			<footer>
-
-				<p>
-					EastCoast RPG by <span>Kennzo</span> © | <a href='#'><button><img src= "{% static 'svg/icons/dontate.svg' %}" width="30px">Donate</button></a>
-				</p>
-
-			<cite>
-					This website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
-					Grand Theft Auto and Grand Theft Auto: San Andreas are registered trademarks of Take-Two Interactive Software Inc.
-			</cite>
-
-		</footer>
-
 	</div>
-
+	{% include 'footer.html' %}
 </body>
 
 </html>
