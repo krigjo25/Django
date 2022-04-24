@@ -1,8 +1,8 @@
 {% load static %}
 {% load sass_tags %}
-{% block foo %}
-   {% include "firefly.html" %}
-{% endblock %}
+
+	{% include  "template/firefly/firefly.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -15,7 +15,6 @@
 		<meta name="keywords" content="python, django, cv">
 		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/firefly/firefly.sass' %}" media="screen" />
 		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/index.sass' %}" media="screen" />
         <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/accordion.sass' %}" media = "screen">
     </head>

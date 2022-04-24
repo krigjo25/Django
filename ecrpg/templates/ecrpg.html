@@ -1,6 +1,6 @@
 {% load static %}
-{% load sass_tags %}
 
+{% include 'template/dodecahedron/dodecahedron.html' %}
 
 <!DOCTYPE html>
 	<html lang="en-us">
@@ -15,20 +15,12 @@
 			<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'templates/dodecahedron/dodecahedron.sass' %}" media="screen" />
+
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
 		</head>
 
 		<body>
-			<div class="view">
-				<div class="plane main">
-				  <div class="circle"></div>
-				  <div class="circle"></div>
-				  <div class="circle"></div>
-				  <div class="circle"></div>
-				  <div class="circle"></div>
-				  <div class="circle"></div>
-				</div>
+
 			  </div>
 
 			<header>
