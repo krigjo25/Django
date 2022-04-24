@@ -1,7 +1,6 @@
 {% load static %}
 {% load sass_tags %}
 
-
 <!DOCTYPE html>
 	<html lang="en-us">
 			<!-- Infomation about the head-->
@@ -14,8 +13,8 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
-			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass %}" media="screen"/>
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass' %}" media="screen"/>
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/home.sass' %}" media="screen"/>
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
 		</head>
 
@@ -71,12 +70,10 @@
 					</article>
 					<article>
 						<h2> Server Information</h2>
-						<img src="{% static 'svg/development-idea-svgrepo-com.svg' %}">
-							<div class="cap">
-							<p> Management team and Game Documentations</p>
-						</div>
-						
-						<p></p>
+						<img src="{% static 'svg/lawDocumentations.svg' %}" alt='Management and Game Documentation' width="200px"/>
+
+						<h3> Management team and Game Documentations</h3>
+
 						<nav>
 							<ul>
 								<a href="{% url 'managementTeam' %}"><li class="btn">- The Admin team</li></a>
@@ -88,10 +85,10 @@
 					</article>
 					<article>
 						<h2>Server Statics</h2>
-						<img src="{% static 'svg/stats-svgrepo-com.svg' %}" class="test">
-						<div class="cap">
-							<p> Player based activity, licenses, skin homes, Business and job statics </p>
-						</div>
+						<img src="{% static 'svg/stats-svgrepo-com.svg' %}" width="1000px">
+
+						<h3> Player based statics </h3>
+
 						<nav class="nav">
 							<ul>
 								<a href="#"><li class="btn">- EastCoast Top 5</li></a>

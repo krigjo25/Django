@@ -13,33 +13,36 @@
 			<meta name="description" content="rpg, samp" />
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass' %}" media="screen"/>
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />
-			<link rel="stylesheet" type = "text/css" href = "{% static 'css/index.css' %}" media="screen" />
+
 		</head>
 		<body>
 			{% block page_content %}
-			<div>
-			<!-- Head of the document -->
 			<header>
-				<a href="{% url 'ecrpg' %}">
-					<h1>
-						<span>East</span>
-						<span class="sCol">Coast</span>
-						<span>RPG</span>
-					</h1>
-				</a>
+
+				<h1>
+					<a href="{% url 'ecrpg' %}">East<span class="sCol">Coast</span> RPG</a>
+				</h1>
 
 				<nav>
+
 					<ul>
+
 						<li>
-						<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
+							<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
 						</li>
+
 						<li> 
-							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static '/img/samp.png' %}" class="samp"></a>
+							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static 'img/samp.png' %}" class="samp"></a>
 						</li>
+
 					</ul>
+
 				</nav>
+
 			</header>
+
 			<!-- Middle of the document -->
 			<main>
 				<h2> Admin Level 3</h2>
