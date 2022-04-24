@@ -56,8 +56,10 @@ input:checked ~ .tab-content {
   transition: all 0.35s; }
 
 .tab-content {
+  left: 50px;
   max-height: 0;
   padding: 0 1em;
+  position: relative;
   transition: all 0.35s;
   background: transparent; }
 

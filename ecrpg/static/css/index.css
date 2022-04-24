@@ -16,11 +16,12 @@ header, main, footer {
 }
 
 body {
-  color: whitesmoke;
+  color: wheat;
   inline-size: 100%;
   font-size: 0.850em;
   margin-inline-end: auto;
   margin-inline-start: auto;
+  background-color: #121212;
   writing-mode: horizontal-tb;
 
 }
@@ -29,6 +30,9 @@ h1 {
   font-size: 16px;
 }
 
+h2 {
+  color:#b38a6d;
+}
 header h1 span {
   color: #b38a6d;
 }
@@ -116,7 +120,6 @@ main li.btn:hover {
 
 
 
-
 nav ul {
   padding-inline-start: 10px;
 }
@@ -142,11 +145,15 @@ footer p span {
 }
 
 footer cite {
+  
   font-size: 0.9em;
+  color: whitesmoke;
 }
+
 footer button {
-  background-color:transparent;
+  color:#fefefe;
   border: none;
+  background-color:transparent;
 }
 .samp {
   inline-size: 4em;
