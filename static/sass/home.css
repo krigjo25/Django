@@ -11,7 +11,7 @@ main > article > ul {
 article > p {
   margin: auto;
   font-size: 17px;
-  inline-size: 400px; }
+  max-inline-size: 400px; }
 
 main h3 nav {
   column-count: 2;

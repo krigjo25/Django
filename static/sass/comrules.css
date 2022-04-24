@@ -1,3 +1,6 @@
+h3 {
+  font-size: 18px; }
+
 .mof {
   color: green; }
 
@@ -6,5 +9,7 @@
 
 .hof {
   color: red; }
+
+/* ToolTips @ raj(https://codepen.io/raj-codepen)*/
 
 /*# sourceMappingURL=comrules.css.map */
