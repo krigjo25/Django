@@ -230,4 +230,16 @@ Any continously rulebreaking will the punishmen be decided by the admin team
 
 
 Minor offence
-Verbal warning, Kick, jail & mute
+Verbal warning, Kick, jail (120-500) & mute (1-5 min)
+
+Moderate offence
+warning, 
+jail (500 - 750), 
+ban (1-6 days)
+
+high offence
+Admins has to decide which action is appropiate
+Acoount / item / cash reset,
+
+ban (7+ days)
+jail (750 -)

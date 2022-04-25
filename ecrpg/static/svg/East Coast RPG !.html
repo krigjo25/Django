@@ -1,30 +1,26 @@
-{% load static %}
-{% load sass_tags %}
-
 <!DOCTYPE html>
-	<html lang="en-us">
-			<!-- Infomation about the head-->
-		<head>
+<!-- saved from url=(0034)http://localhost:8000/ecrpg/rules/ -->
+<html lang="en-us"><!-- Infomation about the head--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<!-- Meta data information-->
-			<meta charset="utf-8" />
+			
 			<title>East Coast RPG !</title>
-			<meta name="maintainer" content="krigjo25" />
-			<meta name="description" content="rpg, samp" />
-			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/accordion.sass' %}" media="screen" />
-			<link rel="stylesheet" type="text" href = "{% static 'css/tooltip.css' %}" media="screen" />
-			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass' %}" media="screen"/>
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/comrules.sass' %}" media="screen" />
+			<meta name="maintainer" content="krigjo25">
+			<meta name="description" content="rpg, samp">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="./East Coast RPG !_files/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="./East Coast RPG !_files/accordion.css" media="screen">
+			<link rel="stylesheet" type="text" href="./East Coast RPG !_files/tooltip.css" media="screen">
+			<link rel="stylesheet" type="text/css" href="./East Coast RPG !_files/__index__.css" media="screen">
+			<link rel="stylesheet" type="text/css" href="./East Coast RPG !_files/comrules.css" media="screen">
 
-		</head>
+		<style id="dark-reader-style" type="text/css"></style></head>
 
 		<body>
 
 			<header>
 
 				<h1>
-					<a href="{% url 'ecrpg' %}">East<span class="sCol">Coast</span> RPG</a>
+					<a href="http://localhost:8000/ecrpg/">East<span class="sCol">Coast</span> RPG</a>
 				</h1>
 
 				<nav>
@@ -32,11 +28,11 @@
 					<ul>
 
 						<li>
-							<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
+							<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&amp;utm_medium=Connect"><img src="./East Coast RPG !_files/discord.svg" class="discord"></a>
 						</li>
 
 						<li> 
-							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static 'img/samp.png' %}" class="samp"></a>
+							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="./East Coast RPG !_files/samp.png" class="samp"></a>
 						</li>
 
 					</ul>
@@ -68,12 +64,12 @@
 										can be included in the convosation / understand you
 
 									</span>
-									<div class = "tooltip">
+									<div class="tooltip">
 										<p class="mof">Minor offence</p>
-										<span class = "tooltxt">
+										<span class="tooltxt">
 
-											<p><b>Verbal warning</b>, <b>Kick</b>, <b>Jail (120-499)</b>, <b>mute (1-5 min)</b></p>
-									</div>
+											<p><b>Verbal warning</b>, <b>Kick</b>, <b>Jail (120-500)</b>, <b>mute (1-5 min)</b></p>
+									</span></div>
 								</div>
 		
 							</div>
@@ -88,13 +84,10 @@
 									<span class="capt">
 
 										Spam in this context refers to repeated use of the same command and repeatedly state the same statement
+										offenceStatus
 
-										<div class = "tooltip">
-											<p class="mof">Minor offence</p>
-											<span class = "tooltxt">
-	
-												<p><b>Verbal warning</b>, <b>Kick</b>, <b>Jail (120-499)</b>, <b>mute (1-5 min)</b></p>
-										</div>
+										<p class="mof">Minor offence</p>
+									</span>
 
 								</div>
 
@@ -159,26 +152,7 @@
 										</p>
 
 									</span>
-									<span>
-										<div class = "tooltip">
-											<p class="mof">Minor offence</p>
-											<span class = "tooltxt">
-
-											<p><b>Verbal warning</b>, <b>Kick</b>, <b>Jail (120-499)</b>, <b>mute (1-5 min)</b></p>
-										</div> /
-
-										<div class = "tooltip">
-
-											<p class="mod">Moderate offence</p>
-
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>Kick</b>, <b>jail (500 - 749)</b>, <b>ban (1-6 days)</b></p>
-
-											</span>
-
-										</div>
-									</span>
+									<span><p class="mof">Minor offence</p> / <p class="mod">Moderate offence</p></span>
 
 									<h3>§3.3 Family Insults</h3>
 
@@ -199,34 +173,14 @@
 										The Admin team encourage the community to respect each other, 
 										it doesn't mean you've to like the player, but respect the player for being a human. 
 										We do what we think is right in the given context.
-
 									</span>
-
-									<span>
-										<div class = "tooltip">
-											<p class="mod">Moderate offence</p>
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>Kick</b>, <b>jail (500 - 749)</b>, <b>ban (1-6 days)</b></p>
-										</div> /
-
-										<div class = "tooltip">
-
-											<p class="hof">High offence</p>
-
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>jail (750+ )</b>, <b>ban (7+ days)</b></p>
-
-											</span>
-
-										</div>
+									<span><p class="mod">Moderate offence</p> / <p class="hof">High offence</p></span>
 								</div>
 								
 							</div>
 							
 							<div class="tab">
-								<input type="radio" id="rd4" name="rd" \>
+								<input type="radio" id="rd4" name="rd" \="">
 								<label class="tab-label" for="rd4">§4. Unsupporting play </label>
 								
 								<div class="tab-content">
@@ -240,18 +194,14 @@
 									</span>
 
 									<h3>§4.2  bot and Software assistance</h3>
-
 									<p class="capt"> 
 
 										a player using methods to create an advantage beyond normal gameplay, in order to make the game easier.
-
 									</p>
-
-									<p class = "capt">
-										In the server we only allow <q>Visual design modifications</q>  &amp; <b> keybinds</b>. 
+									<p class="capt">
+										In the server we only allow <q>Visual design modifications</q> &amp; <b> keybinds</b>. 
 										If you're not sure what this includes, please cosult an admin. 
 									</p>
-
 									<p>
 										exploiting bugs, please report it in Discord. 
 										Its not allowed to exploit the bugs for your own adventage.
@@ -261,10 +211,8 @@
 									<h3>§4.3 Using real life currency</h3>
 
 										<p class="capt">
-
 											Selling features such as items, ecash or accounts,  
 											is not allowed
-
 										</p>
 
 									<h3>§4.4 Advertising</h3>
@@ -273,20 +221,6 @@
 											Partnerships can be requested, by contacting the server owner. Any advertisements which is not whitelisted
 											will result in a ban.
 										</p>
-
-										<div class = "tooltip">
-
-											<p class="hof">High offence</p>
-
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>jail (750+)</b>, <b>ban (7+ days)</b></p>
-
-											</span>
-
-										</div>
-								</div>
-							</div>
 
 							<div class="tab">
 
@@ -297,28 +231,18 @@
 
 									<span class="capt">
 
-										A multiple accounts means a certain player has two or more in-game accounts,
+										A multiple accounts means a certain user has two or more accounts, is two or more accounts, 
 										it gives you a game adventage, and its not allowed
 
 									</span>
 
-									<div class = "tooltip">
-
-										<p class="hof">High offence</p>
-
-										<span class = "tooltxt">
-
-											<p><b>warning</b>, <b>jail (750+)</b>, <b>ban (7+ days)</b></p>
-
-										</span>
-
-									</div>
+									<p class="hof">High offence</p>
 							</div>
 							</div>
 
 							<div class="tab">
-								<input type="radio" id="rd6" name="rd" \>
-								<label class="tab-label" for="rd6">§6. Safezones, Vehicle Kills & Spawnkilling </label>
+								<input type="radio" id="rd6" name="rd" \="">
+								<label class="tab-label" for="rd6">§6. Safezones, Vehicle Kills &amp; Spawnkilling </label>
 
 								<div class="tab-content">
 
@@ -327,7 +251,7 @@
 									<p class="capt">
 
 										Every safe zone consideres zones where you recieve a message "safe zone".
-										There you will not be able to do grand theft auto, nor harm other players.
+										There you will not be able to do grand theft auto, nor harm players.
 
 										<strong>list of safezones</strong>
 
@@ -335,72 +259,50 @@
 
 									<p class="capt">
 
-										Spawn killing is considered when you harm / murder a player at the player spawn location,
-										Each player should be able to get a chance atleast to get out of their spawn.
+										Spawn killing is considered when you murder a player at the player spawn
 
 									</p>
 
-									<h3>§6.3 Vehicles</h3>
+									<h3>§6.3 Vehicle kill</h3>
 
-									<p class="capt">
-										Per definition this defines using anykind of vehicles with intention to harm, 
-										kill another in-game character. Its not allowed. 
+									<span class="capt">
+										Automatically kicked from the server, and suspected.
 
-									</p>
+									</span>
 
-									<div class = "tooltip">
 										<p class="mof">Minor offence</p>
-										<span class = "tooltxt">
-
-											<p><b>Verbal warning</b>, <b>Kick</b>, <b>Jail (120-499)</b>, <b>mute (1-5 min)</b></p>
-									</div>
-
 									
 								</div>
 							</div>
 
 							<div class="tab">
 
-								<input type="radio" id="rd7" name="rd" \>
+								<input type="radio" id="rd7" name="rd" \="">
 								<label class="tab-label" for="rd7">§7 Network  </label>
 
 								<div class="tab-content">
 
 									<h3>§7.1 Virtual Private Network</h3>
 
-									<p class="capt">
+									<span class="capt">
 										Virtual Private NSetwork describes any technology
 										that can encapsulate and transmit network data.
 										VPN is not allowed, as the Network define your identity as a player
-									</p>
+									</span>
 
-									<p>
+									<p class="hof">High offence</p>
+									<strong>
 
-										<strong>
+										Using VPN to evade a ban increases the length of the ban with one month. 
+										Assisting other players in this case will result a day or two ban
 
-											Using VPN to evade a ban increases the length of the ban with one month. 
-											Assisting other players in this case might result in a punishment
-
-										</strong>
-									</p>
-
-									<div class = "tooltip">
-
-										<p class="hof">High offence</p>
-
-										<span class = "tooltxt">
-
-											<p><b>warning</b>, <b>jail (750+ )</b>, <b>ban (7+ days)</b></p>
-
-										</span>
-
-									</div>
+									</strong>
 								</div>
 							</div>
 
 							<div class="tab">
 
-								<input type="radio" id="rd8" name="rd" \>
+								<input type="radio" id="rd8" name="rd" \="">
 								<label class="tab-label" for="rd8">§8. Threats / Scam </label>
 
 								<div class="tab-content">
@@ -414,34 +316,21 @@
 
 									</span>
 
-							   		<h3>§8.2 Threats towards server and / or players</h3>
+							   		<h3>§8.2 Threats towards server and player</h3>
 
 									<span class="capt">
 
-										A Threat is defined as a fearfull action. Any threats agains any players, or the server is not tolerated
-
+										A fearfull action, this also includes black mail
 
 									</span>
 
 									<p>
-										<div class = "tooltip">
-											<p class="mod">Moderate offence</p>
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>Kick</b>, <b>jail (500 - 749)</b>, <b>ban (1-6 days)</b></p>
-										</div> /
-
-										<div class = "tooltip">
-
-											<p class="hof">High offence</p>
-
-											<span class = "tooltxt">
-
-												<p><b>warning</b>, <b>jail (750+ )</b>, <b>ban (7+ days)</b></p>
-
-											</span>
-
-										</div>
+										<span class="mod">
+											Moderate Offence
+										</span>
+										<span class="hof">
+											High Offence
+										</span>
 									</p>
 								</div>
 							</div>
@@ -451,9 +340,9 @@
 
 					</div>
 
-				</section>
+				</div></div></section>
 				
-				<section>
+				<!--section>
 
 					<h2>Discord Community Rules</h2>
 
@@ -468,24 +357,28 @@
 								
 								<div class="tab-content">
 
-									<p> 
-										In Discord we stay on topic all times, the name of the channel is the topic of the channel
-										We follow the game rules, inside the community Discord server also, its a part of the game.
-									</p>
+									<p> In Discord we stay</p>
+									<span class="capt">
+										We follow the game rules, inside the community server also, its a part of the game.
+
+									</span>
 
 									<h3>§ 1.1 #server-chat</h3>
 									
 									<span class="capt">
 
-										In order to use the channel, you will have to be whitelisted. To get this rank please contact Woody.
+										To speak in this channel you need to be Whitelisted. To get this rank please pm Woody.
 									</span>
 
 									<h3>§ 1.2 Whitelistet rules</h3>
 									<span class="capt">
-										- Respect server rules,
-										- Emojis, mentions are not allowed as it will crash the channel.
+										- Respect server rules 
+										- Emoji aren't allowed 
+										- Don't mention players 
+										- If you are online in game, don't use this channel
 										- Some characters aren't supported, don't abuse of them please
 										- Be careful, if your sentence is too long, the sentence can't be send</span>
+										When you are whitelisted make sure you follow the following rules:
 
 									</span>
 
@@ -505,7 +398,7 @@
 					</div>
 				</section>
 
-				<!--section>
+				<section>
 					<h2>Laws of San Andreas</h2>
 
 					<div class="col">
@@ -534,16 +427,28 @@
 						</div>
 					</div>
 
-				</section-->
+				</section>
 				<p><strong>A last note :</strong> 
 					These punishments are only etter eller annet.
-					Punishments which requires account reset, other type of resets / repeated offenders or bans will be discussed between the admins.</p>
-				<p> repeated offenders, will be discussed with the management team, 
+					Punishments which requires account reset, other type of resets or bans will be discussed between the admins.</p>
 				<p>Please follow the given rules, they're common sense, play fair and do to others what you'd like them to do with you.
 					Repeated offences may lead stricter "Punishments"</p>
-			</main>
+			</main-->
 
-			{% include 'footer.html' %}
-	</body>
+			
+<footer>
 
-</html>
+    <p>
+        EastCoast RPG by <span>Kennzo</span> © | <a href="http://localhost:8000/ecrpg/rules/#"><button><img src="./East Coast RPG !_files/dontate.svg" width="30px">Donate</button></a>
+    </p>
+
+<cite>
+        This website is not affiliated with Rockstar Games, Rockstar North or Take-Two Interactive Software Inc.
+        Grand Theft Auto and Grand Theft Auto: San Andreas are registered trademarks of Take-Two Interactive Software Inc.
+</cite>
+
+</footer>
+	
+
+
+</main></body></html>
