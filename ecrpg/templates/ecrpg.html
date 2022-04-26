@@ -11,109 +11,120 @@
 			<meta name="maintainer" content="krigjo25" />
 			<meta name="description" content="rpg, samp" />
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
+
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass' %}" media="screen"/>
-			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/home.sass' %}" media="screen"/>
+
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/home.sass' %}" media="screen"/>
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__index__.sass' %}" media="screen"/>
+			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'bs/firefly/firefly.sass' %}" media="screen" />
+			
+
 		</head>
 
 		<body>
-			{% include 'template/dodecahedron/dodecahedron.html' %}
-			<header>
 
-				<h1>
-					<a href="{% url 'ecrpg' %}">East<span class="sCol">Coast</span> RPG</a>
-				</h1>
+			<div id="curve"></div>
+				{% include 'template/firefly/firefly.html' %}
+				<header>
 
-				<nav>
+					<h1>
+						<a href="{% url 'ecrpg' %}">East<span class="sCol">Coast</span> RPG</a>
+					</h1>
+					<q class="slogan">all of your dreams can be true<br>if there is the courage to pursue them</q>
 
-					<ul>
+					<nav>
 
-						<li>
-							<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
-						</li>
+						<ul>
 
-						<li> 
-							<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static 'img/samp.png' %}" class="samp"></a>
-						</li>
+							<li>
+								<a href="https://discord.com/invite/q4kT94QQ?utm_source=Discord%20Widget&utm_medium=Connect"><img src="{% static 'svg/discord.svg' %}" class="discord"></a>
+							</li>
 
-					</ul>
+							<li> 
+								<a href="http://files.hzgaming.net/sa-mp-0.3.7-R4-install.exe"><img src="{% static 'img/samp.png' %}" class="samp"></a>
+							</li>
 
-				</nav>
-				<section id="slideshow">
-					<div class="entire-content">
-						<div class="content-carrousel">
-							<figure class="shadow"><img src="{% static 'img/screens/sa-mp-003.png' %}"/></figure>
-							<figure class="shadow"><img src="{% static 'img/screens/sa-mp-022.png' %}"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-							<figure class="shadow"><img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-				</div>
-				</div>
-				</section>
-			</header>
+						</ul>
 
-			<main>
+					</nav>
+					<section id="slideshow">
+						<div class="entire-content">
+							<div class="content-carrousel">
+								<figure class="shadow"><img src="{% static 'img/screens/sa-mp-003.png' %}"/></figure>
+								<figure class="shadow"><img src="{% static 'img/screens/sa-mp-022.png' %}"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+								<figure class="shadow"><img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
+					</div>
+					</div>
+					</section>
+				</header>
 
-					<article>
+				<main>
 
-						<p>
-							Get ready for a New world of San Andreas EastCoast RPG
-							is a roleplay based gameplay in San andreas multiplayer
-							and it has been online since 2020.
-						</p>
-					</article>
-					<article>
-						<h2> Server Information</h2>
-						<img src="{% static 'svg/lawDocumentations.svg' %}" alt='Management and Game Documentation' width="200px"/>
+						<article>
 
-						<h3> Management team and Game Documentations</h3>
+							<p>
+								Get ready for a New world of San Andreas EastCoast RPG
+								is a roleplay based gameplay in San andreas multiplayer
+								and it has been online since 2020.
+							</p>
+						</article>
+						<article>
+							<h2> Server Information</h2>
+							<img src="{% static 'svg/lawDocumentations.svg' %}" alt='Management and Game Documentation' width="200px"/>
 
-						<nav>
-							<ul>
-								<a href="{% url 'managementTeam' %}"><li class="btn">- The Admin team</li></a>
-								<a href="{% url 'managementTeam' %}"><li class="btn">- Banned players</li></a>
-								<a href="{% url 'rules' %}"><li class="btn">- Community Rules</li></a>
-								<a href="{% url 'gameWiki' %}"><li class="btn">- EastCoast Wiki</li></a>
-							</ul>
-						</nav>
-					</article>
-					<article>
-						<h2>Server Statics</h2>
-						<img src="{% static 'svg/stats-svgrepo-com.svg' %}" width="1000px">
+							<h3> Management team and Game Documentations</h3>
 
-						<h3> Player based statics </h3>
+							<nav>
+								<ul>
+									<a href="{% url 'managementTeam' %}"><li class="btn">- The Admin team</li></a>
+									<a href="{% url 'managementTeam' %}"><li class="btn">- Banned players</li></a>
+									<a href="{% url 'rules' %}"><li class="btn">- Community Rules</li></a>
+									<a href="{% url 'gameWiki' %}"><li class="btn">- EastCoast Wiki</li></a>
+								</ul>
+							</nav>
+						</article>
+						<article>
+							<h2>Server Statics</h2>
+							<img src="{% static 'svg/stats-svgrepo-com.svg' %}" width="200px">
 
-						<nav class="nav">
-							<ul>
-								<a href="#"><li class="btn">- EastCoast Top 5</li></a>
-								<a href="#"><li class="btn">- EastCoast Job stats</li></a>
-								<a href="#"><li class="btn">- EastCoast Vehicles</li></a>
-								<a href="#"><li class="btn">- EastCoast Business</li></a>
-								<a href="#"><li class="btn">- EastCoast Skins</li></a>
-								<a href="#"><li class="btn">- EastCoast Homes</li></a>
-								<a href="#"><li class="btn">- EastCoast Gallery</li></a>
+							<h3> Player based statics </h3>
 
-							</ul>
-						</nav>
-					</article>
-					<article>
+							<nav class="nav">
+								<ul>
+									<a href="#"><li class="btn">- EastCoast Top 5</li></a>
+									<a href="#"><li class="btn">- EastCoast Job stats</li></a>
+									<a href="#"><li class="btn">- EastCoast Vehicles</li></a>
+									<a href="#"><li class="btn">- EastCoast Business</li></a>
+									<a href="#"><li class="btn">- EastCoast Skins</li></a>
+									<a href="#"><li class="btn">- EastCoast Homes</li></a>
+									<a href="#"><li class="btn">- EastCoast Gallery</li></a>
 
-						<p>Thank you for visiting the community website, 
-							we're thrilled to enjoy the game with you and
-							 feel free to join our community at Discord
-						</p>
+								</ul>
+							</nav>
+						</article>
+						<article>
 
-					</article>
-			</main>
+							<p>Thank you for visiting the community website, 
+								we're thrilled to enjoy the game with you and
+								feel free to join our community at Discord
+							</p>
 
-	</div>
-	{% include 'footer.html' %}
-</body>
+						</article>
+				</main>
+			</div>
+		{% include 'footer.html' %}
+
+	</body>
 
 </html>

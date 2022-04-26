@@ -8,15 +8,21 @@
   box-sizing: border-box
 
 
-body
+body,html
+  block-size: 100%
 
+body
   color: wheat
+  font-size: 16px
   inline-size: 100%
-  font-size: 0.850em
+  background-size: cover
   margin-inline-end: auto
   margin-inline-start: auto
-  background-color: #121212
   writing-mode: horizontal-tb
+  background-position: center
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-image: url(../img/background/gta-san-andreas-multiplayer-samp.jpg)
 
 
 header, main, footer
@@ -50,6 +56,16 @@ header h1
   text-align: center
   font-family: "pricedown"
   text-shadow: 0 13.36px 8.896px #fefefe,0 2px 1px #b38a6d
+
+.slogan
+
+
+  color: white
+  font-family: 'Quintessential', cursive
+  line-height: 27px
+  font-size: 18px
+  pointer-events: none
+  animation: message-frames 1.5s ease 5s forwards
 
 // Navigation menu
 
