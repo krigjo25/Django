@@ -48,7 +48,7 @@ h3 {
   margin-left: -60px;
   inline-size: 197px;
   transition: opacity 0.3s;
-  background-color: #121212; }
+  background-color: #5E5555; }
 
 .tooltip .tooltxt::after {
   content: "";
@@ -58,7 +58,7 @@ h3 {
   border-width: 5px;
   position: absolute;
   border-style: solid;
-  border-color: #121212 transparent transparent transparent; }
+  border-color: #5E5555 transparent transparent transparent; }
 
 .tooltip:hover .tooltxt {
   opacity: 1;

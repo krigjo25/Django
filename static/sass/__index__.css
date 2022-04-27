@@ -16,10 +16,7 @@ body {
   margin-inline-end: auto;
   margin-inline-start: auto;
   writing-mode: horizontal-tb;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(../img/background/gta-san-andreas-multiplayer-samp.jpg); }
+  background: #121212; }
 
 header, main, footer {
   inline-size: 100%;
