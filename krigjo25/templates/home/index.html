@@ -3,41 +3,50 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8" />
 		<title> krigjo25</title>
-		<meta description="Tombstone Protector" />
+		<meta description="krigjo25|Home" />
 		<meta name="maintainer" content="@krigjo25">
 		<meta name="edited" content="@krigjo25" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="python, django, cv">
 		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/__krigjo25Index__.sass' %}" media="screen" />
-        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen">
-    </head>
+		<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen">
+		{% now 'Y-m-d' as dateToday %}
+			{% if dateToday == someday|date:"y-12-31" %}
+				<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25fireworks.sass' %}" media = "screen">
+	
+			{% elif dateToday == someday|date:"y-02-14" %}
+			{% elif dateToday == someday|date:"y-02-25" %}
+			{% elif dateToday > someday|date:"y-04-01" %}
+	
+			{% else %}
+				<link rel="stylesheet" type = "text/css" href = "{% sass_src 'template/firefly/firefly.sass' %}" media="screen" />
+	
+				{% endif %}
+	</head>
+
 	{% block page_content %}
 	<body>
-		{% include  "template/firefly/firefly.html" %}
-		<div id="bg"></div>
+
 		<div id="curve">
 
-			<header>
-	
-				<h1> The Technology of tomorrow </h1>
-				<h1> The feature is now. </h1>
-			
-			</header>
+			{% include "home/header.html" %}
 	
 			<main>
-				{% include 'krigjo25.html' %}
-				{% include 'theProcsess.html' %}
-				{% include 'jobs.html' %}
+
+				{% include 'home/krigjo25.html' %}
+				{% include 'home/theProcsess.html' %}
+				{% include 'home/jobs.html' %}
 	
 			</main>
-	
+
 			<footer>
-	
+
 				<nav>
 	
 					<div class="col">
@@ -50,13 +59,11 @@
 								<label class="tab-label" for="rd1">Discord Bots</label>
 								
 								<div class="tab-content">
-
 									{% for rp in dBots %}
 
 									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
 
 									<span class="capt">{{ rp.description }}</span>
-
 									{% endfor %}
 								</div>
 		
@@ -68,7 +75,6 @@
 								<label class="tab-label" for="rd2">Database</label>
 								
 								<div class="tab-content">
-
 									{% for db in database %}
 
 									<a href="{{ rp.link }}">
@@ -79,8 +85,8 @@
 									</a>
 
 									<span class="capt">{{ db.description }}</span>
-
 									{% endfor %}
+
 								</div>
 		
 							</div>
@@ -97,7 +103,7 @@
 
 
 					<div class="tab">
-					<label class="tab-label col"><a href='/blog'>Blog</a></label>
+					<label class="tab-label col"><a href='{% url "blogIndex" %}'>Blog</a></label>
 					<label class="tab-label col"><a href='mailto:krigjo25@gmail.com'>Hire Me</a></label>
 					</div>
 				</section>

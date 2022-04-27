@@ -1,6 +1,6 @@
 // Html tags
 
-* 
+*
     box-sizing: border-box
 
 body
@@ -10,33 +10,41 @@ body
     inline-size: 100%
     writing-mode: horizontal-tb
     -webkit-writing-mode: horizontal-tb
-    background: radial-gradient(ellipse at bottom, #192E47 0%, #030617 100%)
+
+#curve
+
+    margin: auto
+    inline-size: 75%
 
 //  Rows
 
-header, main
+header, main, footer
 
     flex: 1
     inline-size: 100%
-    color: white
     text-align: center
     display: inline-block
     padding-block-start: 5em
 
-header > h1 
+header > h1
 
     text-align: center
 
-label > a 
+header a, header a:hover, footer  a, footer  a:hover
+
+    color: #000
+    text-decoration: none
+
+
+
+label > a
 
     block-size: 100%
     inline-size: 100%
 
-div > p 
+div > p
 
     padding-inline: 2em
-
-
 
 // ID
 
@@ -44,7 +52,6 @@ div > p
 
     margin: auto
     max-block-size: 100%
-
 
 .capt
 
@@ -54,3 +61,7 @@ div > p
     position: relative
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2)
 
+a, a::hover, a::visited
+
+    color: #000
+    text-decoration: none

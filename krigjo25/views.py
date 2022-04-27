@@ -1,12 +1,14 @@
 from multiprocessing import context
+from xml.etree.ElementTree import Comment
 from django.shortcuts import render
+from krigjo25.forms import CommentForm
 from krigjo25.models import DatabaseProjects, DiscordBots, MiscProjects, BlogComments, BlogPost
 
-def webIndex(request):
+def WebIndex(request):
 
     #   Initializing the database connection
-    dBotRepo = DiscordBots.objects.all()
-    mdb = DatabaseProjects.objects.all()
+    dBotRepo = DiscordBots.objects.all().order_by('-title')
+    mdb = DatabaseProjects.objects.all().order_by('-title')
     
     context = {
                 'databases':mdb,
@@ -14,7 +16,7 @@ def webIndex(request):
                 
 }
 
-    return render(request, 'index.html', context)
+    return render(request, 'home/index.html', context)
 
 
 def ProjectDetail(request, pk):
@@ -22,7 +24,7 @@ def ProjectDetail(request, pk):
     project = DiscordBots.objects.get(pk=pk)
     context = {'discBot': project,}
 
-    return render(request, 'projectDetail.html', context)
+    return render(request, 'home/projectDetail.html', context)
 
 #   The blog page
 def BlogIndex(request):
@@ -34,7 +36,7 @@ def BlogIndex(request):
 
     }
 
-    return render(request, 'blogIndex.html', context)
+    return render(request, 'blog/blogIndex.html', context)
 
 def BlogCategory(request, category):
 
@@ -44,19 +46,33 @@ def BlogCategory(request, category):
         'BlogCategories':category,
     }
 
-    return render(request, 'blogCategory.html', context)
+    return render(request, 'blog/blogCategory.html', context)
 
 def BlogDetails(request, pk):
+
+    form = CommentForm()
+
     blogPost = BlogPost.objects.filter(pk=pk)
-    cmts = BlogComments.objects.filter(post = blogPost)
+    
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+
+        if form.is_valid():
+            comment = Comment(
+                author=form.cleaned_data['author'],
+                body = form.cleaned_data['body'],
+                blogpost = blogPost)
+            comment.save()
+
+    
+    comments = BlogComments.objects.filter(post = blogPost)
+
     context = {
+                'form': form,
                 'BlogPost':blogPost,
-                'BlogComments':cmts,
+                'BlogComments':comments,
+                
 
 
 }  
-    return render(request, 'blogDetails.html', context)
-
-#   Testing
-def TestBackGround(request):
-    return render(request, 'backGroundTest.html')
+    return render(request, 'blog/blogDetails.html', context)

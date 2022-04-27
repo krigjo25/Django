@@ -2,7 +2,9 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-                path('', views.webIndex, name = 'index'),
-                path('test/bg/', views.TestBackGround, name = 'Backgrounds'),
-                path('<int:pk>/', views.ProjectDetail, name = 'detail'),
+                path('', views.WebIndex, name = 'index'),
+                path('blog/', views.BlogIndex, name = 'blogIndex'),
+                path('<int:pk>/', views.BlogDetails, name = 'BlogDetail'),
+                path('<category>/', views.BlogCategory, name = 'BlogCategory'),
+                path('<int:pk>/', views.ProjectDetail, name = 'ProjectDetail'),
 ]
