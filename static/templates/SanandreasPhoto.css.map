@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "SanandreasPhoto.css",
-	"sources": [
-		"SanandreasPhoto.sass"
-	],
-	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI;EACjB,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS;EAC5B,qBAAqB,EAAE,KAAK;EAC5B,gBAAgB,EAAE,gDAAgD,GAAG"
-}

@@ -13,8 +13,8 @@
 		<meta name="keywords" content="python, django, cv">
 		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/index.sass' %}" media="screen" />
-        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/accordion.sass' %}" media = "screen">
+		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/__krigjo25Index__.sass' %}" media="screen" />
+        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen">
     </head>
 	{% block page_content %}
 	<body>
@@ -29,26 +29,10 @@
 			</header>
 	
 			<main>
-				<h2> Greetings, Kristoffer </h2>
-					<h3> About me </h3>
-					<div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Sed quis ullamcorper eros. Pellentesque sit amet finibus nisl. 
-							Curabitur eu facilisis dui, egestas rutrum ligula. 
-							Sed malesuada pretium nulla in placerat. Aliquam erat volutpat. 
-							Fusce viverra suscipit libero, vitae finibus tortor aliquet posuere. 
-
-						</p>
-					</div>
-					<h3> What can i offer ? </h3>
-					<div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Sed quis ullamcorper eros. Pellentesque sit amet finibus nisl. 
-							Curabitur eu facilisis dui, egestas rutrum ligula. 
-
-					</div>
+				{% include 'krigjo25.html'%}
+				{% include 'jobs.html'%}
+				{% include 'theProcsess.html'%}
+	
 			</main>
 	
 			<footer>
