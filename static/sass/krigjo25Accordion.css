@@ -33,7 +33,7 @@ input:checked ~ .tab-content {
 
 .tab {
   width: 100%;
-  color: white;
+  color: #B3A1A1;
   overflow: hidden;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5); }
 
@@ -46,7 +46,7 @@ input:checked ~ .tab-content {
   justify-content: space-between; }
 
 .tab-label:hover {
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.03); }
 
 .tab-label::after {
   content: "❯";
