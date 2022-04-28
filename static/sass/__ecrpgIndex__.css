@@ -18,7 +18,7 @@ body {
   writing-mode: horizontal-tb;
   background: #121212; }
 
-header, main, footer {
+header, main, footer, nav {
   inline-size: 100%;
   text-align: center;
   display: inline-block;

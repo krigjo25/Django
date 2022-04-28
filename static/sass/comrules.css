@@ -27,7 +27,7 @@ h3 {
 
 .tooltip {
   opacity: 1;
-  margin: 15px;
+  margin: auto;
   cursor: pointer;
   block-size: 20px;
   position: relative;
