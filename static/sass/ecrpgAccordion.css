@@ -1,11 +1,11 @@
 @charset "UTF-8";
 label {
+  color: #4B5E51;
   text-align: left;
   padding-block-start: 1em; }
 
 label > a, label > a:hover, label > a:visited {
-  color: #121212;
-  text-decoration: none; }
+  color: white; }
 
 input[type="radio"] {
   display: none; }
@@ -19,7 +19,8 @@ input:checked ~ .tab-content {
   max-inline-size: 265px; }
 
 .tab-content > h3 {
-  text-align: start; }
+  text-align: start;
+  padding-block: 16px; }
 
 .col {
   padding-inline-end: 0px;
@@ -33,6 +34,9 @@ input:checked ~ .tab-content {
   border-radius: 8px; }
 
 .tab {
+  width: 75%;
+  margin: auto;
+  color: white;
   overflow: hidden;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5); }
 
@@ -42,10 +46,10 @@ input:checked ~ .tab-content {
   cursor: pointer;
   font-weight: bold;
   background: transparent;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .tab-label:hover {
-  background-color: rgba(255, 255, 255, 0.03); }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 .tab-label::after {
   content: "❯";
@@ -67,4 +71,4 @@ input:checked ~ .tab-content {
   font-size: 0.75em;
   justify-content: flex-end; }
 
-/*# sourceMappingURL=krigjo25Accordion.css.map */
+/*# sourceMappingURL=ecrpgAccordion.css.map */

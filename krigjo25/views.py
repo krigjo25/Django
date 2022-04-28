@@ -30,6 +30,7 @@ def ProjectDetail(request, pk):
 def BlogIndex(request):
 
     blogPost = BlogPost.objects.all().order_by('-created')
+
     context = {
 
                 'BlogPost':blogPost
@@ -40,7 +41,7 @@ def BlogIndex(request):
 
 def BlogCategory(request, category):
 
-    blogPost = BlogPost.objects.filter(categories__name__contains=category).order_by('- created')
+    blogPost = BlogPost.objects.filter(categories__name__contains=category).order_by('created')
     context = {
         'BlogPost':blogPost,
         'BlogCategories':category,
@@ -76,3 +77,5 @@ def BlogDetails(request, pk):
 
 }  
     return render(request, 'blog/blogDetails.html', context)
+
+

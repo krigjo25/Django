@@ -21,7 +21,6 @@
 			<link rel="stylesheet" type = "text/css" href = "{% static 'css/3dSlider.css' %}" media="screen" />
 			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/ecrpgHome.sass' %}" media="screen"/>
 			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__ecrpgIndex__.sass' %}" media="screen"/>
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'bs/firefly/firefly.sass' %}" media="screen" />
 			
 
 		</head>
@@ -87,10 +86,33 @@
 
 							<nav>
 								<ul>
-									<a href="{% url 'managementTeam' %}"><li class="btn">- The Admin team</li></a>
-									<a href="{% url 'managementTeam' %}"><li class="btn">- Banned players</li></a>
-									<a href="{% url 'rules' %}"><li class="btn">- Community Rules</li></a>
-									<a href="{% url 'gameWiki' %}"><li class="btn">- EastCoast Wiki</li></a>
+									<a href="{% url 'managementTeam' %}">
+										<li class="btn"> 
+											<img src="/static/svg/icons/lawenforcer-svgrepo-com.svg" style="inline-size: 20px;"/>
+											The Admin team
+										</li>
+									</a>
+
+									<a href="{% url 'managementTeam' %}">
+										<li class="btn">
+											<img src="/static/svg/icons/banned-wrong-svgrepo-com.svg" style="inline-size: 20px;"/>
+											Banned players
+										</li>
+									</a>
+
+									<a href="{% url 'rules' %}">
+										<li class="btn">
+											<img src="/static/svg/icons/rules-svgrepo-com.svg" style="inline-size: 20px;" />
+											Community Rules
+										</li>
+									</a>
+
+									<a href="{% url 'ecrpgwiki' %}">
+										<li class="btn">
+											<img src="/static/svg/icons/university-svgrepo-com.svg" style="inline-size: 20px;" />
+											EastCoast Wiki
+										</li>
+									</a>
 								</ul>
 							</nav>
 						</article>
@@ -121,10 +143,10 @@
 							</p>
 
 						</article>
-				</main>
-			</div>
-		{% include 'footer.html' %}
+					</main>
+				</div>
+			{% include 'footer.html' %}
 
-	</body>
+		</body>
 
-</html>
+	</html>

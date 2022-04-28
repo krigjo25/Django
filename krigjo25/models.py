@@ -28,13 +28,13 @@ class DiscordBots(models.Model):
 #   The Blog
 class BlogCategory(models.Model):
 
-    category = models.CharField(max_length=20)
+    name = models.CharField(max_length=20)
 
 class BlogPost(models.Model):
 
     title = models.CharField(max_length=255)
     body = models.TextField()
-    categories = models.ManyToManyField('BlogCategory', related_name='posts')
+    category = models.ManyToManyField('BlogCategory', related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
 

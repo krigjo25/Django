@@ -75,11 +75,11 @@
 								<label class="tab-label" for="rd2">Database</label>
 								
 								<div class="tab-content">
-									{% for db in database %}
+									{% for db in databases %}
 
-									<a href="{{ rp.link }}">
+									<a href="{{ db.link }}">
 										<h3>
-											<img src={% static rp.img %} alt='' width="100px">
+											<img src={% static db.img %} alt='' width="100px">
 											{{ db.title }}
 										</h3>
 									</a>

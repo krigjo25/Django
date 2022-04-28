@@ -48,14 +48,14 @@
 				<h2> Admin Level 3</h2>
 				<section>
 
-					{% for lvl3 in admin3 %}
+					{% for 3 in lvl3 %}
 					<article class="lvl3">
 						
 
 						<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{lvl3.memberName}}</b></h4>
+    						<h4><b>{{3.memberName}}</b></h4>
 							
     						<div>
 
@@ -63,11 +63,10 @@
 								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
     							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
     						</div>
-							<img src={% static lvl3.img %} alt="Avatar" class="cimg">
     						<!-- If the admin is offilne,
     							Show last online date in red-->
     						<p>online / offline</p>
-    						<p><strong>Boss :</strong> {{lvl3.boss}}</p>
+    						<p><strong>Boss :</strong> {{3.boss}}</p>
     					</div>
     				</article>
 					{% endfor %}
@@ -77,23 +76,22 @@
 					
 
 					<article class="lvl2">
-						{% for lvl2 in admin2 %}
+						{% for 2 in lvl2 %}
 
 						<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{lvl2.memberName}}</b></h4>
+    						<h4><b>{{2.memberName}}</b></h4>
 							
     						<div>
 								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
     							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
     						</div>
 
-							<img src={% static lvl2.img %} alt="Avatar" class="cimg">
     						<!-- If the admin is offilne,
     							Show last online date in red-->
     						<p>online / offline</p>
-    						<p><strong>Boss :</strong> {{lvl2.boss}}</p>
+    						<p><strong>Boss :</strong> {{2.boss}}</p>
     					</div>
     				</article>
 					{% endfor %}
@@ -103,22 +101,20 @@
 				<section>
 
 					<article class="lvl">
-						{% for lvl in admin %}
+						{% for 1 in lvl %}
 
 						<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{lvl.memberName}}</b></h4>
+    						<h4><b>{{1.memberName}}</b></h4>
 							
     						<div>
 
     							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
     						</div>
-							<img src={% static lvl.img %} alt="Avatar" class="cimg">
-    						<!-- If the admin is offilne,
-    							Show last online date in red-->
+
     						<p>online / offline</p>
-    						<p><strong>Boss :</strong> {{lvl.boss}}</p>
+    						<p><strong>Boss :</strong> {{1.boss}}</p>
     					</div>
     				</article>
 					{% endfor %}
