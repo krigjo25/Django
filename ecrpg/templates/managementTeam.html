@@ -14,7 +14,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__ecrpgindex__.sass' %}" media="screen"/>
-			<link rel="stylesheet" type = "text/css" href = "{% static 'css/management.css' %}" media="screen" />
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/management.sass' %}" media="screen"/>
 
 		</head>
 		<body>
@@ -45,68 +45,65 @@
 
 			<!-- Middle of the document -->
 			<main>
+
 				<h2> Admin Level 3</h2>
-				<section>
 
-					{% for 3 in lvl3 %}
-					<article class="lvl3">
-						
+				{% for 3 in lvl3 %}
+				<article class="lvl3">
 
-						<div class="card">
+					<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{3.memberName}}</b></h4>
+    						<h4 class="aColor"><b>{{3.memberName}}</b></h4>
 							
-    						<div>
+							<div>
 
-    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
-								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
-    							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
-    						</div>
-    						<!-- If the admin is offilne,
-    							Show last online date in red-->
+									<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+									<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
+									<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
+							</div>
+
     						<p>online / offline</p>
     						<p><strong>Boss :</strong> {{3.boss}}</p>
+
     					</div>
-    				</article>
-					{% endfor %}
-				</section>
+					</div>
+    			</article>
+				{% endfor %}
+
 				<h2> Admin Level 2</h2>
-				<section>
-					
 
-					<article class="lvl2">
-						{% for 2 in lvl2 %}
+				<article class="lvl2">
+					{% for 2 in lvl2 %}
 
-						<div class="card">
+					<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{2.memberName}}</b></h4>
+    						<h4 class="aColor"><b>{{2.memberName}}</b></h4>
 							
     						<div>
 								<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;">
     							<img src="{% static 'svg/star.svg' %}" alt="Avatar" style ="inline-size: 32px;"> 
     						</div>
 
-    						<!-- If the admin is offilne,
-    							Show last online date in red-->
+
     						<p>online / offline</p>
     						<p><strong>Boss :</strong> {{2.boss}}</p>
+
     					</div>
-    				</article>
-					{% endfor %}
-				</section>
+					</div>
+    			</article>
+				{% endfor %}
 
 				<h2> Admin Level 1</h2>
-				<section>
 
-					<article class="lvl">
-						{% for 1 in lvl %}
+				<article class="lvl">
+					{% for 1 in lvl %}
 
-						<div class="card">
+					<div class="card">
 							
  						<div class="container">
-    						<h4><b>{{1.memberName}}</b></h4>
+    						<h4 class="aColor"><b>{{1.memberName}}</b></h4>
 							
     						<div>
 
@@ -115,30 +112,28 @@
 
     						<p>online / offline</p>
     						<p><strong>Boss :</strong> {{1.boss}}</p>
+
     					</div>
-    				</article>
-					{% endfor %}
-				</section>
+					</div>
+    			</article>
+				{% endfor %}
 
 				<h2> Helper team</h2>
-				<section>
-						
-						<article class="helper">
-							{% for h in helper %}
-							<div class="card">
-								
-							 <div class="container">
-								<h4><b>{{h.memberName}}</b></h4>
 
-								<img src={% static h.img %} alt="Avatar" class="cimg">
-								<!-- If the admin is offilne,
-									Show last online date in red-->
-								<p>online / offline</p>
-								<p><strong>Boss :</strong> {{h.boss}}</p>
-							</div>
-						</article>
-						{% endfor %}
-				</section>
+				<article class="helper">
+					{% for h in helper %}
+					<div class="card">
+								
+						<div class="container">
+							<h4><b>{{h.memberName}}</b></h4>
+
+							<p>online / offline</p>
+							<p class="aColor"><strong>Boss :</strong> {{h.boss}}</p>
+						</div>
+					</div>
+				</article>
+				{% endfor %}
+
 			</main>
 			{% include 'footer.html' %}
 			{% endblock %}

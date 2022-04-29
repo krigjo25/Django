@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "pricedown";
-  src: url("../font/pricedown bl.ttf") format(ttf); }
+  font-family: pricedown;
+  src: url("../font/$baseFont bl.ttf") format(ttf); }
 
 * {
   box-sizing: border-box; }
@@ -9,14 +9,12 @@ body, html {
   block-size: 100%; }
 
 body {
-  color: wheat;
+  color: white;
+  background: #121212;
   font-size: 16px;
   inline-size: 100%;
-  background-size: cover;
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  writing-mode: horizontal-tb;
-  background: #121212; }
+  margin-inline: auto;
+  writing-mode: horizontal-tb; }
 
 header, main, footer, nav {
   inline-size: 100%;
@@ -32,7 +30,7 @@ h2 {
 
 header h1 span {
   color: #b38a6d;
-  text-shadow: 0 13.36px 8.896px #b38a6d,0 2px 0px #fefe; }
+  text-shadow: 0 13.36px 8.896px #b38a6d, 0 2px 0px #fefe; }
 
 header a, header a:hover {
   color: #fafafa;
@@ -41,15 +39,15 @@ header a, header a:hover {
 header h1 {
   font-size: 50px;
   text-align: center;
-  font-family: "pricedown";
-  text-shadow: 0 13.36px 8.896px #fefefe,0 2px 1px #b38a6d; }
+  font-family: pricedown;
+  text-shadow: 0 13.36px 8.896px #fefefe, 0 2px 1px #b38a6d; }
 
 .slogan {
   color: white;
-  font-family: 'Quintessential', cursive;
   line-height: 27px;
   font-size: 18px;
   pointer-events: none;
+  font-family: 'Quintessential', cursive;
   animation: message-frames 1.5s ease 5s forwards; }
 
 nav ul {
@@ -74,7 +72,7 @@ footer p {
 
 footer p span {
   color: #b38a6d;
-  font-family: "pricedown"; }
+  font-family: pricedown; }
 
 footer cite {
   font-size: 10px;
@@ -89,4 +87,4 @@ footer button:hover {
   padding: 5px;
   background-color: rgba(245, 245, 245, 0.3); }
 
-/*# sourceMappingURL=__ecrpgIndex__.css.map */
+/*# sourceMappingURL=__ecrpgindex__.css.map */
