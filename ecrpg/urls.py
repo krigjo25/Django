@@ -8,5 +8,6 @@ urlpatterns = [
                 path('wiki/<int:pk>/', views.WikiDetails, name = 'WikiDetails'),
                 path('wiki/<category>/', views.wikiPost, name = 'wikiPost'),
                 path('management/', views.managementTeam, name = 'managementTeam'),
+                path('banned/', views.bannedPlayer, name='playerBans'),
 
 ]

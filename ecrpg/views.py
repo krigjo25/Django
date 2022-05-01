@@ -1,6 +1,6 @@
 
 from django.shortcuts import render
-from ecrpg.models import  ManagementTeam, WikiCategory, WikiPost
+from ecrpg.models import  BannedPlayer, ManagementTeam, WikiCategory, WikiPost
 
 
 def EcRPGIndex(request):
@@ -9,7 +9,16 @@ def EcRPGIndex(request):
 def CommunityRules(request):
         return render(request, 'comrules.html')
 
+def bannedPlayer(request):
 
+    banned = BannedPlayer.objects.all()
+
+    context = {
+
+        'playerBans':banned,
+    }
+
+    return render(request, 'banned.html', context)
 def managementTeam(request):
 
     lvl = ManagementTeam.objects.all()

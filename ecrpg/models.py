@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 
 # Create your models here.
@@ -5,7 +6,7 @@ from django.db import models
 
 class ManagementTeam(models.Model):
 
-    memberName = models.CharField(max_length=255)
+    playerName = models.CharField(max_length=255)
     lvl = models.IntegerField()
     boss = models.CharField(max_length=255)
 
@@ -21,3 +22,10 @@ class WikiPost(models.Model):
     category = models.ManyToManyField('WikiCategory', related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
+
+class BannedPlayer(models.Model):
+
+    playerName = models.CharField(max_length=255)
+    date = models.DateTimeField(auto_now_add=True)
+    reason = models.CharField(max_length=255)
+    adminName = models.CharField(max_length=255)
