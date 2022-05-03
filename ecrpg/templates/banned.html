@@ -14,7 +14,8 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__ecrpgindex__.sass' %}" media="screen"/>
-			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/management.sass' %}" media="screen"/>
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/__card__.sass' %}" media="screen"/>
+			<link rel="stylesheet" type="text/css" href = "{% sass_src 'sass/banned.sass' %}" media="screen"/>
 
 		</head>
 		<body>
@@ -54,11 +55,11 @@
 					<div class="card">
 							
  						<div class="container">
-    						<h4 class="aColor"><b>{{banned.playerName}}</b></h4>
+    						<h4><b>{{banned.playerName}}</b></h4>
 
     						<p><strong>Ban Date :</strong> {{banned.date}}</p>
                             <p><strong>reason :</strong> {{banned.reason}}</p>
-                            <p><strong>Banned by :</strong> {{ banned.adminName }}</p>
+                            <p class="aColor"><strong>Banned by :</strong> {{ banned.adminName }}</p>
 
     					</div>
 					</div>

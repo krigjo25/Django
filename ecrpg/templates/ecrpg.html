@@ -89,28 +89,28 @@
 								<ul>
 									<a href="{% url 'managementTeam' %}">
 										<li class="btn"> 
-											<img src="/static/svg/icons/lawenforcer-svgrepo-com.svg" style="inline-size: 20px;"/>
+											<img src="{% static 'svg/icons/lawenforcer-svgrepo-com.svg'  %}" style="inline-size: 20px;"/>
 											The Admin team
 										</li>
 									</a>
 
 									<a href="{% url 'playerBans' %}">
 										<li class="btn">
-											<img src="/static/svg/icons/banned-wrong-svgrepo-com.svg" style="inline-size: 20px;"/>
+											<img src="{% static '/svg/icons/banned-wrong-svgrepo-com.svg' %}" style="inline-size: 20px;"/>
 											Banned players
 										</li>
 									</a>
 
 									<a href="{% url 'rules' %}">
 										<li class="btn">
-											<img src="/static/svg/icons/rules-svgrepo-com.svg" style="inline-size: 20px;" />
+											<img src="{% static '/svg/icons/rules-svgrepo-com.svg' %}" style="inline-size: 20px;" />
 											Community Rules
 										</li>
 									</a>
 
 									<a href="{% url 'ecrpgwiki' %}">
 										<li class="btn">
-											<img src="/static/svg/icons/university-svgrepo-com.svg" style="inline-size: 20px;" />
+											<img src="{% static '/svg/icons/university-svgrepo-com.svg'" style="inline-size: 20px;" />
 											KnownledgeBase
 										</li>
 									</a>
