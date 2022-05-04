@@ -23,7 +23,7 @@ class DiscordBots(models.Model):
     title = models.CharField(max_length=9)
     description = models.TextField()
     img = models.FilePathField(path='/img', default='/img/logo/python.svg')
-    link = models.TextField(default='https://github.com/krigjo25?tab=repositories')
+    link = models.TextField()
 
 #   The Blog
 class BlogCategory(models.Model):

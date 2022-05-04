@@ -61,7 +61,7 @@
 								<div class="tab-content">
 									{% for rp in dBots %}
 
-									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='' width="100px">{{ rp.title }}</h3></a>
+									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='python logo' width="30px">{{ rp.title }}</h3></a>
 
 									<span class="capt">{{ rp.description }}</span>
 									{% endfor %}
@@ -79,7 +79,7 @@
 
 									<a href="{{ db.link }}">
 										<h3>
-											<img src={% static db.img %} alt='' width="100px">
+											<img src={% static db.img %} alt='Mariadb logo' width="30px">
 											{{ db.title }}
 										</h3>
 									</a>

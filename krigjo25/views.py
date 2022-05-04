@@ -7,8 +7,8 @@ from krigjo25.models import DatabaseProjects, DiscordBots, MiscProjects, BlogCom
 def WebIndex(request):
 
     #   Initializing the database connection
-    dBotRepo = DiscordBots.objects.all().order_by('-title')
-    mdb = DatabaseProjects.objects.all().order_by('-title')
+    dBotRepo = DiscordBots.objects.all().order_by('id')
+    mdb = DatabaseProjects.objects.all().order_by('id')
     
     context = {
                 'databases':mdb,
@@ -22,7 +22,7 @@ def WebIndex(request):
 def ProjectDetail(request, pk):
 
     project = DiscordBots.objects.get(pk=pk)
-    context = {'discBot': project,}
+    context = {'discBot': project}
 
     return render(request, 'home/projectDetail.html', context)
 
