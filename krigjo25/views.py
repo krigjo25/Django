@@ -2,7 +2,7 @@ from multiprocessing import context
 from xml.etree.ElementTree import Comment
 from django.shortcuts import render
 from krigjo25.forms import CommentForm
-from krigjo25.models import DatabaseProjects, DiscordBots, MiscProjects, BlogComments, BlogPost
+from krigjo25.models import DatabaseProjects, DiscordBots, MiscProjects, BlogComments, BlogPost, BlogCategory
 
 def WebIndex(request):
 
@@ -29,31 +29,24 @@ def ProjectDetail(request, pk):
 #   The blog page
 def BlogIndex(request):
 
-    blogPost = BlogPost.objects.all().order_by('-created')
+    blogCategory = BlogCategory.objects.all()
 
     context = {
 
-                'BlogPost':blogPost
+                'Tag':blogCategory,
 
     }
 
     return render(request, 'blog/blogIndex.html', context)
 
-def BlogCategory(request, category):
+def blogPost(request, category):
 
-    blogPost = BlogPost.objects.filter(categories__name__contains=category).order_by('created')
-    context = {
-        'BlogPost':blogPost,
-        'BlogCategories':category,
-    }
-
-    return render(request, 'blog/blogCategory.html', context)
+    post = BlogPost.objects.filter(category__name__contains=category). order_by('-created')
+    pass
 
 def BlogDetails(request, pk):
 
-    form = CommentForm()
-
-    blogPost = BlogPost.objects.filter(pk=pk)
+    post = BlogPost.objects.filter(pk=pk)
     
     if request.method == 'POST':
         form = CommentForm(request.POST)
@@ -62,15 +55,15 @@ def BlogDetails(request, pk):
             comment = Comment(
                 author=form.cleaned_data['author'],
                 body = form.cleaned_data['body'],
-                blogpost = blogPost)
+                blogpost = post)
             comment.save()
 
     
-    comments = BlogComments.objects.filter(post = blogPost)
+    comments = BlogComments.objects.filter(post = post)
 
     context = {
                 'form': form,
-                'BlogPost':blogPost,
+                'BlogPost':post,
                 'BlogComments':comments,
                 
 

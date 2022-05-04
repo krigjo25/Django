@@ -3,84 +3,33 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title> krigjo25</title>
-		<meta description="krigjo25 | blog" />
-		<meta name="maintainer" content="@krigjo25">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="python, django, sql, cv">
-		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/__krigjo25Index__.sass' %}" media="screen" />
-        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen" />
-		{% now 'Y-m-d' as dateToday %}
-		{% if dateToday == someday|date:"y-12-31" %}
-			<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25fireworks.sass' %}" media = "screen">
-
-		{% elif dateToday == someday|date:"y-02-14" %}
-		{% elif dateToday == someday|date:"y-02-25" %}
-		{% elif dateToday > someday|date:"y-04-01" %}
-
-		{% else %}
-			<link rel="stylesheet" type = "text/css" href = "{% sass_src 'template/firefly/firefly.sass' %}" media="screen" />
-
-			{% endif %}
-    </head>
-
-	{% block page_content %}
 	<body>
-		{% now 'Y-m-d' as dateToday %}
-		{% if dateToday == someday|date:"y-12-31" %}
-			{% include  "template/fireworks/fireworks.html" %}
-
-		{% elif dateToday == someday|date:"y-02-14" %}
-		{% elif dateToday == someday|date:"y-02-25" %}
-		{% elif dateToday > someday|date:"y-04-01" %}
-
-		{% else %}
-			{% include  "template/firefly/firefly.html" %}
-
-			{% endif %}
-
 		<div id="curve">
-
-			{% include "home/header.html" %}
+			{% include '../home/header.html' %}
 	
 			<main>
-                    {% for post in blogPost%}
+				<section>
+					{% for category in Tag %}
+					<article>
 
-                    <article>
-                        <h2>
+						<div class="crd">
+							<a href="{% url 'blogPost' category.name %}">
 
-                            <a href="{% url 'blogDetails' post.pk %}">
-                                {{ post.title }}                            
-                            </a> 
+								<div class="ctr">
 
-                        </h2>
+										<h2> {{ category.name }}</h2>
 
-                        <small>
+								</div>
+							</a>
+						</div>
+					</article>
+					{% endfor %}
+				</section>
 
-                            {{ post.created.date}} | Categories: {% for category in BlogCategory %}
-                        
-                            <a href=" {% url 'blogCategory' category.name %">{{ category.name }}</a>
-                            {% endfor %}
-
-                        </small>
-                        <p>{{ post.body | slice:":400" }}</p>
-
-                    </article>
-
-                    {% endfor %}
-                </main>
-
-			<footer>
-	
-			</footer>
+            </main>
 
 		</div>
 
 	</body>
 </html>
 
-{% endblock %}

@@ -4,38 +4,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8" />
-		<title> krigjo25</title>
-		<meta description="krigjo25|Home" />
-		<meta name="maintainer" content="@krigjo25">
-		<meta name="edited" content="@krigjo25" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="python, django, cv">
-		<meta http-equiv="content-security-policy|content-type|defult-style|refresh">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/__krigjo25Index__.sass' %}" media="screen" />
-		<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen">
-		{% now 'Y-m-d' as dateToday %}
-			{% if dateToday == someday|date:"y-12-31" %}
-				<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25fireworks.sass' %}" media = "screen">
-	
-			{% elif dateToday == someday|date:"y-02-14" %}
-			{% elif dateToday == someday|date:"y-02-25" %}
-			{% elif dateToday > someday|date:"y-04-01" %}
-	
-			{% else %}
-				<link rel="stylesheet" type = "text/css" href = "{% sass_src 'template/firefly/firefly.sass' %}" media="screen" />
-	
-				{% endif %}
-	</head>
 
-	{% block page_content %}
 	<body>
+
+		{% block page_content %}
 
 		<div id="curve">
 
-			{% include "home/header.html" %}
+			{% include 'home/header.html' %}
 	
 			<main>
 
@@ -45,73 +21,75 @@
 	
 			</main>
 
-			<footer>
-
-				<nav>
-	
-					<div class="col">
-	
-						<div class="tabs">
-	
-							<div class="tab">
-	
-								<input type="radio" id="rd1" name="rd">
-								<label class="tab-label" for="rd1">Discord Bots</label>
-								
-								<div class="tab-content">
-									{% for rp in dBots %}
-
-									<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='python logo' width="30px">{{ rp.title }}</h3></a>
-
-									<span class="capt">{{ rp.description }}</span>
-									{% endfor %}
-								</div>
-		
-							</div>
-
-							<div class="tab">
-	
-								<input type="radio" id="rd2" name="rd">
-								<label class="tab-label" for="rd2">Database</label>
-								
-								<div class="tab-content">
-									{% for db in databases %}
-
-									<a href="{{ db.link }}">
-										<h3>
-											<img src={% static db.img %} alt='Mariadb logo' width="30px">
-											{{ db.title }}
-										</h3>
-									</a>
-
-									<span class="capt">{{ db.description }}</span>
-									{% endfor %}
-
-								</div>
-		
-							</div>
-
-
-						  <div class="tab">
-	
-							<input type="radio" id="rd3" name="rd">
-							<label for="rd3" class="tab-close">Close &times;</label>
-	
-						</div>
-						</div>
-					</div>
-
-
-					<div class="tab">
-					<label class="tab-label col"><a href='{% url "blogIndex" %}'>Blog</a></label>
-					<label class="tab-label col"><a href='mailto:krigjo25@gmail.com'>Hire Me</a></label>
-					</div>
-				</section>
-				</nav>
-			</footer>
-
 		</div>
+		<footer>
 
+			<nav>
+
+				<div class="col">
+
+					<div class="tabs">
+
+						<div class="tab">
+
+							<input type="radio" id="rd1" name="rd">
+							<label class="tab-label" for="rd1">Discord Bots</label>
+							
+							<div class="tab-content">
+								{% for rp in dBots %}
+								<div>
+									
+
+								<a href="{{ rp.link }}"><h3><img src={% static rp.img %} alt='python logo' width="30px">{{ rp.title }}</h3></a>
+
+								<p class="capt">{{ rp.description }}</p>
+								</div>
+								
+								{% endfor %}
+							</div>
+	
+						</div>
+
+						<div class="tab">
+
+							<input type="radio" id="rd2" name="rd">
+							<label class="tab-label" for="rd2">Database</label>
+							
+							<div class="tab-content">
+								{% for db in databases %}
+
+								<a href="{{ db.link }}">
+									<h3>
+										<img src={% static db.img %} alt='Mariadb logo' width="30px">
+										{{ db.title }}
+									</h3>
+								</a>
+
+								<p class="capt">{{ db.description }}</p>
+								{% endfor %}
+
+							</div>
+	
+						</div>
+
+
+					  <div class="tab">
+
+						<input type="radio" id="rd3" name="rd">
+						<label for="rd3" class="tab-close">Close &times;</label>
+
+					</div>
+					</div>
+				</div>
+
+
+				<div class="tab">
+				<label class="tab-label col"><a href='{% url "blogIndex" %}'>Blog</a></label>
+				<label class="tab-label col"><a href='mailto:krigjo25@gmail.com'>Hire Me</a></label>
+				</div>
+			</section>
+			</nav>
+		</footer>
 	</body>
 </html>
 

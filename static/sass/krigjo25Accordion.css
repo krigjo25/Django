@@ -15,10 +15,13 @@ input:checked + .tab-label::after {
 
 input:checked ~ .tab-content {
   padding: 1em;
-  max-block-size: 100%;
-  max-inline-size: 265px; }
+  inline-size: 100%;
+  max-block-size: 100%; }
 
-.tab-content > h3 {
+.tab-content div {
+  max-inline-size: 310px; }
+
+.tab-content h3 {
   text-align: start; }
 
 .col {
@@ -68,6 +71,8 @@ input:checked ~ .tab-content {
   justify-content: flex-end; }
 
 @media screen and (min-width: 1000px) {
+  .tab-content div {
+    max-inline-size: 100%; }
   input:checked ~ .tab-content {
     max-inline-size: 100%; } }
 

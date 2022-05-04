@@ -10,10 +10,17 @@ class ManagementTeam(models.Model):
     lvl = models.IntegerField()
     boss = models.CharField(max_length=255)
 
+class BannedPlayer(models.Model):
+
+    playerName = models.CharField(max_length=255)
+    date = models.DateTimeField(auto_now_add=True)
+    reason = models.CharField(max_length=255)
+    adminName = models.CharField(max_length=255)
+
 class WikiCategory(models.Model):
 
     name = models.CharField(max_length=20)
-    img = models.FilePathField(path='/svg', default="/static/svg/icons/")
+    img = models.FilePathField(path='static/', default=f'/icons/{name}')
 
 class WikiPost(models.Model):
 
@@ -22,10 +29,3 @@ class WikiPost(models.Model):
     category = models.ManyToManyField('WikiCategory', related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
-
-class BannedPlayer(models.Model):
-
-    playerName = models.CharField(max_length=255)
-    date = models.DateTimeField(auto_now_add=True)
-    reason = models.CharField(max_length=255)
-    adminName = models.CharField(max_length=255)

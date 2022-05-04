@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('playerName', models.CharField(max_length=255)),
                 ('date', models.DateTimeField(auto_now_add=True)),
                 ('reason', models.CharField(max_length=255)),
-                ('by', models.CharField(max_length=255)),
+                ('adminName', models.CharField(max_length=255)),
             ],
         ),
         migrations.CreateModel(

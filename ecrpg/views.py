@@ -6,8 +6,8 @@ from ecrpg.models import  BannedPlayer, ManagementTeam, WikiCategory, WikiPost
 def EcRPGIndex(request):
     return render(request, 'ecrpg.html')
 
-def CommunityRules(request):
-        return render(request, 'comrules.html')
+def CommunityRegulations(request):
+        return render(request, 'srvRegulations.html')
 
 def bannedPlayer(request):
 
@@ -19,6 +19,7 @@ def bannedPlayer(request):
     }
 
     return render(request, 'banned.html', context)
+
 def managementTeam(request):
 
     lvl = ManagementTeam.objects.all()

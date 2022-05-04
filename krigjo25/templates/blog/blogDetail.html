@@ -1,0 +1,43 @@
+{% load static %}
+{% load sass_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<div id="curve">
+		{% include home/staticContent.html %}
+
+	
+			<main>
+
+                {% for post in WikiDetail %}
+
+                    <article>
+                        <h2>
+                                {{ post.title }}                            
+                            </a> 
+
+                        </h2>
+
+                        <small>
+                            {{ post.modified.date}} | Categories: {% for category in BlogCategory %}
+    
+                            <a href=" {% url 'blogCategory' category.name %">{{ category.name }}</a>
+                            {% endfor %}
+
+                        </small>
+                        <p>{{ post.body }}</p>
+						<cite>Written by : (post userID)</cite>
+
+                    </article>
+
+                    {% endfor %}
+
+                </main>
+				{% include 'footer.html' %}
+
+		</div>
+
+	</body>
+</html>
+
+{% endblock %}
