@@ -20,7 +20,7 @@ class BannedPlayer(models.Model):
 class WikiCategory(models.Model):
 
     name = models.CharField(max_length=20)
-    img = models.FilePathField(path='/svg')
+    img = models.FilePathField(path='/svg', blank=True)
 
 class WikiPost(models.Model):
 

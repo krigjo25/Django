@@ -3,41 +3,88 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<div id="curve">
-		{% include home/staticContent.html %}
 
-	
-			<main>
+    <head>
+        {% include 'home/head.html' %}
 
-                {% for post in WikiDetail %}
+    </head>
 
-                    <article>
-                        <h2>
-                                {{ post.title }}                            
-                            </a> 
+    <body>
+        <div id="curve">
+            {% include 'home/header.html' %}
 
-                        </h2>
+        
+                <main>
+                    
+                    {% for post in blogPost %}
+                    
 
-                        <small>
-                            {{ post.modified.date}} | Categories: {% for category in BlogCategory %}
-    
-                            <a href=" {% url 'blogCategory' category.name %">{{ category.name }}</a>
-                            {% endfor %}
+                        <article>
+                            <h2>
+                                    {{ post.title }}                            
+                                </a> 
 
-                        </small>
-                        <p>{{ post.body }}</p>
-						<cite>Written by : (post userID)</cite>
+                            </h2>
 
-                    </article>
+                            <small>
 
-                    {% endfor %}
+                                {{ post.modified.date}} | categories:
+                                <a href=" {% url 'blogIndex' %}">#{{ tag }}</a>
 
-                </main>
-				{% include 'footer.html' %}
 
-		</div>
+                            </small>
+
+                            <p>
+
+                                {{ post.body | slice:"0:111" }}
+                                <q><b>{{ post.body | slice:"112:113" }}</b></q>
+                                {{ post.body | slice:"113:118" }}
+                                <q><b>{{ post.body | slice:"118:124" }}</b></q>.
+                                {{ post.body | slice:"250:418" }}
+
+                            </p>
+
+                            <p>
+
+                                <b>{{ post.body | slice:"420:433" }}</b>
+                                
+                                <ul>
+
+                                    <li>{{ post.body | slice:"433:456" }}</li>
+                                    <li>{{ post.body | slice:"457:482" }}</li>
+                                    <li>{{ post.body | slice:"483:510" }}</li>
+                                    <li>{{ post.body | slice:"510:540" }}</li>
+                                    <li>{{ post.body | slice:"540:584" }}</li>
+                                </ul>
+
+                                <h3>{{ post.body | slice:"585:605" }}</h3>
+                                <ul>
+                                    <li>{{ post.body | slice:"605:621" }}</li>
+                                    <li>{{ post.body | slice:"621:636" }}</li>
+                                    <li>{{ post.body | slice:"637:650" }}</li>
+                                    <li>{{ post.body | slice:"650:665" }}</li>
+                                </ul>
+
+                                {% for bot in DBots %}
+                                <a href = '{{ bot.link }}'>
+
+                                    <button>Add <b>{{ post.title }}</b> to Discord</button>
+                                </a>
+                                
+                                {% endfor %}
+                            </p>
+
+                            <cite>Written by : (post userID)</cite>
+
+                        </article>
+
+                        {% endfor %}
+
+
+
+                    </main>
+
+            </div>
 
 	</body>
 </html>
-
-{% endblock %}

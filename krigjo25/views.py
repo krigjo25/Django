@@ -41,8 +41,23 @@ def BlogIndex(request):
 
 def blogPost(request, category):
 
+
+    
     post = BlogPost.objects.filter(category__name__contains=category). order_by('-created')
-    pass
+
+    bots = DiscordBots.objects.all()
+
+
+    context = {
+
+                
+                'tag':category,
+                'blogPost':post,
+                'DBots':bots.filter(title__contains=f'{BlogPost.title}'),
+
+    }
+    print(bots)
+    return render(request, 'blog/blogDetail.html', context)
 
 def BlogDetails(request, pk):
 
