@@ -17,6 +17,7 @@
                 <main>
                     
                     {% for post in blogPost %}
+                    {% for bot in DBots %}
                     
 
                         <article>
@@ -65,7 +66,7 @@
                                     <li>{{ post.body | slice:"650:665" }}</li>
                                 </ul>
 
-                                {% for bot in DBots %}
+                                
                                 <a href = '{{ bot.link }}'>
 
                                     <button>Add <b>{{ post.title }}</b> to Discord</button>

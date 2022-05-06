@@ -1,4 +1,5 @@
 from multiprocessing import context
+from turtle import title
 from xml.etree.ElementTree import Comment
 from django.shortcuts import render
 from krigjo25.forms import CommentForm
@@ -49,41 +50,15 @@ def blogPost(request, category):
 
 
     context = {
-
                 
                 'tag':category,
                 'blogPost':post,
-                'DBots':bots.filter(title__contains=f'{BlogPost.title}'),
+                'DBots':bots.filter(title=f'{BlogPost.title}'),
 
     }
-    print(bots)
+    print(BlogPost.title)
+
     return render(request, 'blog/blogDetail.html', context)
 
-def BlogDetails(request, pk):
-
-    post = BlogPost.objects.filter(pk=pk)
-    
-    if request.method == 'POST':
-        form = CommentForm(request.POST)
-
-        if form.is_valid():
-            comment = Comment(
-                author=form.cleaned_data['author'],
-                body = form.cleaned_data['body'],
-                blogpost = post)
-            comment.save()
-
-    
-    comments = BlogComments.objects.filter(post = post)
-
-    context = {
-                'form': form,
-                'BlogPost':post,
-                'BlogComments':comments,
-                
-
-
-}  
-    return render(request, 'blog/blogDetails.html', context)
 
 
