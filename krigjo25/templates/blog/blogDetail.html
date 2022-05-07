@@ -6,12 +6,14 @@
 
     <head>
         {% include 'home/head.html' %}
+        <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/__blog__.sass' %}" media = "screen">
 
     </head>
 
     <body>
         <div id="curve">
             {% include 'home/header.html' %}
+            
 
         
                 <main>
@@ -30,7 +32,7 @@
                             <small>
 
                                 {{ post.modified.date}} | categories:
-                                <a href=" {% url 'blogIndex' %}">#{{ tag }}</a>
+                                <a href=" {% url 'blogIndex' %}"><div class = "tag">#{{ tag }}</div></a>
 
 
                             </small>
@@ -79,7 +81,7 @@
 
                         </article>
 
-                        {% endfor %}
+                    {% endfor %}
 
 
 

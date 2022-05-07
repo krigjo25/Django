@@ -53,10 +53,9 @@ def blogPost(request, category):
                 
                 'tag':category,
                 'blogPost':post,
-                'DBots':bots.filter(title=f'{BlogPost.title}'),
+                'DBots':bots,
 
     }
-    print(BlogPost.title)
 
     return render(request, 'blog/blogDetail.html', context)
 

@@ -55,4 +55,8 @@ a, a::hover, a::visited {
   color: #000;
   text-decoration: none; }
 
+button {
+  cursor: pointer;
+  border-radius: 23px; }
+
 /*# sourceMappingURL=__krigjo25Index__.css.map */

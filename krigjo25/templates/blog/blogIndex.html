@@ -14,15 +14,13 @@
 				<section>
 					{% for category in Tag %}
 					<article>
-
 						<div class="crd">
 							<a href="{% url 'blogPost' category.name %}">
+								<button class="crd">
 
-								<div class="ctr">
+									<h2> #{{ category.name }}</h2>
 
-										<h2> {{ category.name }}</h2>
-
-								</div>
+								</button>
 							</a>
 						</div>
 					</article>
