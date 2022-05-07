@@ -27,9 +27,9 @@ input:checked + .tab-label::after
 
 input:checked ~ .tab-content
 
-    padding: 1em
+    //padding: 16px
     inline-size: 100%
-    max-block-size: 100%
+    animation: resize ease-in 2s forwards
 
 .tab-content div
 
@@ -50,7 +50,6 @@ input:checked ~ .tab-content
   
 .tabs
 
-    overflow: hidden
     border-radius: 8px
 
   
@@ -79,13 +78,13 @@ input:checked ~ .tab-content
     width: 1em
     height: 1em
     text-align: center
-    transition: all 0.35s
+    transition: ease-in .55s
 
 .tab-content
 
     max-height: 0
     padding: 0 1em
-    transition: all 0.35s
+    transition: ease-in 1s
     background: transparent
 
 .tab-close
@@ -96,14 +95,50 @@ input:checked ~ .tab-content
     font-size: 0.75em
     justify-content: flex-end
 
+.capt
+
+    top: -10px
+    left: 0
+    font-size: 11px
+    position: relative
+    inline-size: 185px
+    margin-inline-start: 64px
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2)
+
+@keyframes resize
+    0%
+        max-block-size: 0
+
+    100%
+
+        max-block-size: 1000px        
 // Comuputers
 @media screen
 
-  @media (min-width: 1000px)
+  @media (min-width: 900px)
 
     .tab-content div
         max-inline-size: 100%
-        
+
+    .tab-content div h3
+
+        text-align: start
+        margin-inline-start: 35px
+
     input:checked ~ .tab-content
 
         max-inline-size: 100%
+
+    .tab
+        inline-size: 49%
+        display: inline-grid
+
+    .capt
+
+        left: 0px
+        font-size: 16px
+        text-align: start
+        inline-size: 263px
+        margin-inline-start: 100px
+
+
