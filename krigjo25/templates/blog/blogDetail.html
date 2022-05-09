@@ -19,46 +19,46 @@
 
         
                 <main>
+                    <article>
                     
                     {% for post in blogPost %}
                     
-                    
-
-                        <article>
+                    <section>
+                        
                             <h2>
                                     {{ post.title }}                            
                                 </a> 
 
                             </h2>
 
-                            <small>
-
-                                {{ post.modified.date}} | categories:
-                                <a href=" {% url 'blogIndex' %}"><div class = "tag">#{{ tag }}</div></a>
-
-
-                            </small>
-
                             <p class = 'sku'>
 
                                 {{ post.body | markdown | safe }}
 
-
                             </p>
-                                
+
+
+                            <footer>
+
+                                <div>
                                 <a href = '{{ post.link }}'>
 
-                                    <button>Add <b>{{ post.title }}</b> to Discord</button>
+                                    <button>Add <b>{{ post.title }}</b> to Discord</button><br />
+
                                 </a>
+                                </div>
 
-                            </p>
+                                    <p>{{ post.author }}</p>
+                                    <label> Published :</label>
+                                    <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time> | 
 
-                            <cite>Written by : (post userID)</cite>
+                                    categories: <a href=" {% url 'blogIndex' %}"><div class = "tag">#{{ tag }}</div></a>
 
-                        </article>
+                            </footer>
+                        </section>
 
                     {% endfor %}
-
+                    </article>
 
 
                     </main>

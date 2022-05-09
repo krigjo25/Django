@@ -38,6 +38,7 @@ class BlogPost(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
     link = models.TextField(default='https://discord.com/api/oauth2/authorize?client_id=903619759587852338&permissions=8&scope=bot')
+    author = models.TextField(default= 'krigjo25')
 
 class BlogComments(models.Model):
 

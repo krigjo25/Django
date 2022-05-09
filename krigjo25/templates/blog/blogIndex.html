@@ -11,9 +11,9 @@
 			{% include '../home/header.html' %}
 	
 			<main>
-				<section>
+				<article>
 					{% for category in Tag %}
-					<article>
+					<section>
 						<div class="crd">
 							<a href="{% url 'blogPost' category.name %}">
 								<button class="crd">
@@ -23,9 +23,9 @@
 								</button>
 							</a>
 						</div>
-					</article>
+					</section>
 					{% endfor %}
-				</section>
+				</article>
 
             </main>
 
