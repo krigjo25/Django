@@ -17,15 +17,22 @@ def WebIndex(request):
                 
 }
 
-    return render(request, 'home/index.html', context)
+    templateName = 'home/index.html'
+
+    return render(request, templateName, context)
 
 
 def ProjectDetail(request, pk):
 
     project = DiscordBots.objects.get(pk=pk)
-    context = {'discBot': project}
 
-    return render(request, 'home/projectDetail.html', context)
+    context = {
+                'discBot': project
+            }
+
+    templateName = 'home/projectDetail.html'
+
+    return render(request, templateName, context)
 
 #   The blog page
 def BlogIndex(request):
@@ -38,7 +45,9 @@ def BlogIndex(request):
 
     }
 
-    return render(request, 'blog/blogIndex.html', context)
+    templateName = 'blog/blogIndex.html'
+
+    return render(request, templateName, context)
 
 def blogPost(request, category):
 
@@ -57,7 +66,9 @@ def blogPost(request, category):
 
     }
 
-    return render(request, 'blog/blogDetail.html', context)
+    templateName = 'blog/blogDetail.html'
+
+    return render(request, templateName, context)
 
 
 

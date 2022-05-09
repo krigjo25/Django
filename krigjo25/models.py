@@ -23,7 +23,7 @@ class DiscordBots(models.Model):
     title = models.CharField(max_length=9)
     description = models.TextField()
     img = models.FilePathField(path='/img', default='/img/logo/python.svg')
-    link = models.TextField()
+    
 
 #   The Blog
 class BlogCategory(models.Model):
@@ -37,6 +37,7 @@ class BlogPost(models.Model):
     category = models.ManyToManyField('BlogCategory', related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
+    link = models.TextField(default='https://discord.com/api/oauth2/authorize?client_id=903619759587852338&permissions=8&scope=bot')
 
 class BlogComments(models.Model):
 
