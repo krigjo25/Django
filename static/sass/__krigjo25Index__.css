@@ -22,7 +22,8 @@ header a, header a:hover, footer a, footer a:hover {
   color: #000; }
 
 header a, footer a {
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block; }
 
 article {
   display: block;
@@ -47,16 +48,23 @@ ul > li {
   font-weight: 400;
   list-style-type: none; }
 
-#curve {
-  margin: auto;
-  inline-size: 75%; }
+button {
+  border: none;
+  padding: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-size: bold;
+  background-color: #121212; }
+
+button:hover {
+  opacity: 0.6; }
 
 a, a::hover, a::visited {
   color: #000;
   text-decoration: none; }
 
-button {
-  cursor: pointer;
-  border-radius: 23px; }
+#curve {
+  margin: auto;
+  inline-size: 75%; }
 
 /*# sourceMappingURL=__krigjo25Index__.css.map */

@@ -1,3 +1,7 @@
+// Declare Variables
+
+$btnbg: #121212//rgba(144, 12, 63, 56)
+$urltxt : #fff//rgba(41, 149, 254, 100)
 // Html tags
 
 *
@@ -32,7 +36,9 @@ header a, header a:hover, footer  a, footer  a:hover
     color: #000
 
 header a, footer a
+
     text-decoration: none
+    display: inline-block
 
 article
 
@@ -60,6 +66,25 @@ ul > li
     font-weight: 400
     list-style-type: none
 
+button
+
+    border: none
+    padding: 16px
+    color: $urltxt
+    cursor: pointer
+    font-size: bold
+    background-color: $btnbg
+
+// PSUDO SELECTOR
+button:hover
+
+    opacity: 0.6
+
+a, a::hover, a::visited
+
+    color: #000
+    text-decoration: none
+
 // ID
 
 #curve
@@ -69,11 +94,4 @@ ul > li
 
 // Classes
 
-a, a::hover, a::visited
 
-    color: #000
-    text-decoration: none
-
-button
-    cursor: pointer
-    border-radius: 23px

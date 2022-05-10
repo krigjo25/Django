@@ -34,11 +34,12 @@ class BlogPost(models.Model):
 
     title = models.CharField(max_length=255)
     body = models.TextField()
+    author = models.CharField(max_length=255, default='krigjo25')
+    readmelink = models.CharField(max_length=255, default= 'https://github.com/krigjo25/Discord')
+    botlink = models.CharField(max_length=255, default='https://discord.com/api/oauth2/authorize?client_id=903619759587852338&permissions=8&scope=bot')
     category = models.ManyToManyField('BlogCategory', related_name='posts')
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now_add=True)
-    link = models.TextField(default='https://discord.com/api/oauth2/authorize?client_id=903619759587852338&permissions=8&scope=bot')
-    author = models.TextField(default= 'krigjo25')
 
 class BlogComments(models.Model):
 

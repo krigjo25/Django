@@ -1,11 +1,26 @@
-.tag 
+// HTML ELEMENTS
+$list-colour: #fefefe
+$list-bg: #121212
+ul
 
-    color: #121212
-    margin: auto
-    inline-size: 80px
-    border-radius: 45px
-    text-decoration: none
-    border: 1px solid #000
+    padding: 0
+    display: inline-block
+
+div
+
+    margin-block-end: 32px
+    margin-block-start: 32px
+
+ul > li.featli
+    color: $list-colour
+    background-color: $list-bg
+
+ul > li.featli:hover
+    opacity: .6
+
+footer > nav
+
+        margin-block-end: 32px
 
 .tag:hover
     opacity: 0.7
@@ -16,5 +31,29 @@
     margin-block: 21px
     margin-inline: auto
 
-.feature-list
-    inline-size: 100px
+
+
+.featli
+
+    padding: 36px 10px
+    inline-size: 185px
+    margin-inline: 20px
+    display: block
+    background-position: top
+    background-repeat: no-repeat
+    background-image: url('../img/svg/home-checkmark-svgrepo-com.svg')
+
+@media screen
+
+  @media (min-width: 900px)
+
+        .featli
+
+            padding: 36px 10px
+            inline-size: 250px
+            margin-inline: 20px
+            display: inline-block
+
+        ul
+
+            display: inline-flex

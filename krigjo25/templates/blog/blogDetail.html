@@ -8,7 +8,7 @@
     <head>
         {% include 'home/head.html' %}
         <link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/__blog__.sass' %}" media = "screen">
-        
+
     </head>
 
     <body>
@@ -20,7 +20,7 @@
         
                 <main>
                     <article>
-                    
+
                     {% for post in blogPost %}
                     
                     <section>
@@ -34,25 +34,37 @@
                             <p class = 'sku'>
 
                                 {{ post.body | markdown | safe }}
+                                
 
                             </p>
 
-
                             <footer>
 
-                                <div>
-                                <a href = '{{ post.link }}'>
+                                <nav>
+                                    <a href = '{{ post.botlink }}'>
 
-                                    <button>Add <b>{{ post.title }}</b> to Discord</button><br />
+                                        <button>
 
-                                </a>
-                                </div>
+                                            <img src = "{% static 'img/svg/logo/discord-communication-interaction-message-network-svgrepo-com.svg' %}" alt = 'Discord logo' style = 'inline-size:23px; margin-inline:1px;'>
+                                            Add <b>{{ post.title }}</b> to Discord
 
-                                    <p>{{ post.author }}</p>
-                                    <label> Published :</label>
-                                    <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time> | 
+                                        </button>
+                                        <br />
+                                                    
+                                    </a>
 
-                                    categories: <a href=" {% url 'blogIndex' %}"><div class = "tag">#{{ tag }}</div></a>
+                                    <a href = '{{ post.readmelink }}'>
+                                        <button>
+                                            <img src = "{% static 'img/svg/information-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;'/>
+                                                        Read-me
+                                        </button>
+                                    </a>
+                                </nav>
+
+                                <label> Published :</label>
+                                <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time> | 
+
+                                categories: <a href=" {% url 'blogIndex' %}"><button><img src = "{% static 'img/svg/tags-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;' />#{{ tag }}</button></a>
 
                             </footer>
                         </section>
