@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<link rel="stylesheet" type = "text/css" href = "{% sass_src 'sass/__krigjo25Index__.sass' %}" media="screen" />
 		<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25Accordion.sass' %}" media = "screen">
+		<script src="https://kit.fontawesome.com/70de652578.js" crossorigin="anonymous"></script>
 		{% now 'Y-m-d' as dateToday %}
 			{% if dateToday == someday|date:"y-12-31" %}
 				<link rel= "stylesheet" type = "text/css" href = "{% sass_src 'sass/krigjo25fireworks.sass' %}" media = "screen">
@@ -28,4 +29,5 @@
 				<link rel="stylesheet" type = "text/css" href = "{% sass_src 'template/firefly/firefly.sass' %}" media="screen" />
 	
 				{% endif %}
+
 	</head>
