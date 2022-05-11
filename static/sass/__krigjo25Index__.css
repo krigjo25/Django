@@ -11,9 +11,9 @@ body {
 header, main, footer {
   flex: 1;
   inline-size: 100%;
-  text-align: center;
-  display: inline-block;
-  padding-block: 32px; }
+  text-align: start;
+  padding-block: 32px;
+  display: inline-block; }
 
 header > h1 {
   text-align: center; }
@@ -54,10 +54,11 @@ button {
   color: #fff;
   cursor: pointer;
   font-size: bold;
+  display: inline-flex;
   background-color: #121212; }
 
 button:hover {
-  opacity: 0.6; }
+  opacity: 0.7; }
 
 a, a::hover, a::visited {
   color: #000;

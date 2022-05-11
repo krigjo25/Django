@@ -17,8 +17,10 @@ input:checked ~ .tab-content {
   inline-size: 100%;
   animation: resize ease-in 2s forwards; }
 
-.tab-content div {
-  max-inline-size: 310px; }
+.tab-content > div {
+  margin-block-end: 10px;
+  max-inline-size: 100%;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7); }
 
 .tab-content h3 {
   text-align: start; }
@@ -84,8 +86,6 @@ input:checked ~ .tab-content {
     max-block-size: 1000px; } }
 
 @media screen and (min-width: 900px) {
-  .tab-content div {
-    max-inline-size: 100%; }
   .tab-content div h3 {
     text-align: start;
     margin-inline-start: 35px; }

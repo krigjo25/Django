@@ -99,16 +99,18 @@
 							<div class="tab-content">
 								{% for db in databases %}
 
-								<a href="{{ db.link }}">
-									<h3>
-										<img src={% static db.img %} alt='Mariadb logo' width="30px">
-										{{ db.title }}
-									</h3>
-								</a>
+								<div>
+									<a href="{{ db.link }}">
+										<h3>
+											<img src={% static db.img %} alt='Mariadb logo' width="30px">
+											{{ db.title }}
+										</h3>
+									</a>
 
-								<p class="capt">{{ db.description }}</p>
-								{% endfor %}
 
+									<p class="capt">{{ db.description }}</p>
+									{% endfor %}
+								</div>
 							</div>
 	
 						</div>
