@@ -1,5 +1,6 @@
 ul {
-  padding: 0;
+  margin-block: 20px;
+  margin-inline: auto;
   display: inline-block; }
 
 div {
@@ -7,6 +8,7 @@ div {
   margin-block-start: 32px; }
 
 ul > li.featli {
+  margin-block: 16px;
   color: #fefefe;
   background-color: #121212; }
 
