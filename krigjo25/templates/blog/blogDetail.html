@@ -41,30 +41,32 @@
                             <footer>
 
                                 <nav>
+
+                                    <a href = '{{ post.readmelink }}'>
+                                        <button class="bbtn">
+                                            <img src = "{% static 'img/svg/information-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;'/>
+                                                        Read-me
+                                        </button>
+                                    </a>
+
                                     <a href = '{{ post.botlink }}'>
 
-                                        <button>
+                                        <button class="bbtn">
 
                                             <img src = "{% static 'img/svg/logo/discord-communication-interaction-message-network-svgrepo-com.svg' %}" alt = 'Discord logo' style = 'inline-size:23px; margin-inline:1px;'>
-                                            Add <b>{{ post.title }}</b> to Discord
+                                            <b>{{ post.title }}</b>
 
                                         </button>
                                         <br />
                                                     
                                     </a>
 
-                                    <a href = '{{ post.readmelink }}'>
-                                        <button>
-                                            <img src = "{% static 'img/svg/information-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;'/>
-                                                        Read-me
-                                        </button>
-                                    </a>
                                 </nav>
 
                                 <label> Published :</label>
                                 <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time> | 
 
-                                categories: <a href=" {% url 'blogIndex' %}"><button><img src = "{% static 'img/svg/tags-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;' />#{{ tag }}</button></a>
+                                categories: <a href=" {% url 'blogIndex' %}"><div class = 'btn-center'><small><button class = "btag"><img src = "{% static 'img/svg/tags-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;' />#{{ tag }}</button></small></div></a>
 
                             </footer>
                         </section>

@@ -5,6 +5,7 @@
 <html lang="en">
 	<head>
 		{% include '../home/head.html' %}
+		<link rel="stylesheet" type="text/css" href="{% sass_src 'sass/__blogIndex__.sass' %}"/>
 	</head>
 	<body>
 		<div id="curve">
@@ -18,7 +19,7 @@
 							<li>
 								<a href="{% url 'blogPost' category.name %}">
 
-									<button class="crd">
+									<button class="btag">
 										<img src = "{% static 'img/svg/tags-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;' />
 
 										<h2> #{{ category.name }}</h2>

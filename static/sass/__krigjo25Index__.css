@@ -48,15 +48,6 @@ ul > li {
   font-weight: 400;
   list-style-type: none; }
 
-button {
-  border: none;
-  padding: 16px;
-  color: #fff;
-  cursor: pointer;
-  font-size: bold;
-  display: inline-flex;
-  background-color: #121212; }
-
 button:hover {
   opacity: 0.7; }
 
