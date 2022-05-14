@@ -9,11 +9,9 @@ body {
   -webkit-writing-mode: horizontal-tb; }
 
 header, main, footer {
-  flex: 1;
   inline-size: 100%;
-  text-align: start;
-  padding-block: 32px;
-  display: inline-block; }
+  text-align: center;
+  padding-block: 32px; }
 
 header > h1 {
   text-align: center; }

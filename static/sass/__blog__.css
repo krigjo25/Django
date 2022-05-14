@@ -16,7 +16,6 @@ footer > nav {
 ul.feat-list {
   padding: 1px;
   text-align: center;
-  inline-size: 225px;
   margin-block: 20px;
   margin-inline: auto; }
 
@@ -47,11 +46,13 @@ li.featli:hover {
   opacity: .6; }
 
 div.btn-center {
-  margin: 0 auto;
-  inline-size: 100px; }
+  margin: 0 auto; }
 
 .featli > b {
   text-align: center; }
+
+.featli li {
+  list-style-type: disclosure-closed; }
 
 .tag:hover {
   opacity: 0.7; }
@@ -75,12 +76,17 @@ div.btn-center {
   margin-block-end: 16px; }
 
 @media screen and (min-width: 900px) {
+  border: none;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: bold;
+  border-radius: 19px;
+  background-color: #121212;
   .featli {
     padding: 36px 10px;
     inline-size: 250px;
     margin-inline: 20px;
-    display: inline-block; }
-  ul {
-    display: inline-flex; } }
+    display: inline-block; } }
 
 /*# sourceMappingURL=__blog__.css.map */

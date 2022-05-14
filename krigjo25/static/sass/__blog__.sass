@@ -30,7 +30,6 @@ ul.feat-list
 
     padding: 1px
     text-align: center
-    inline-size: 225px
     margin-block: 20px
     margin-inline: auto
 
@@ -68,13 +67,15 @@ li.featli:hover
 div.btn-center
 
     margin: 0 auto
-    inline-size: 100px
 
 
 .featli > b
 
     text-align: center
 
+.featli li
+
+    list-style-type: disclosure-closed
 
 .tag:hover
 
@@ -107,6 +108,16 @@ div.btn-center
 
   @media (min-width: 900px)
 
+        button.btag
+
+        border: none
+        padding: 5px
+        color: $urltxt
+        cursor: pointer
+        font-size: bold
+        border-radius: 19px
+        background-color: $btnbg
+
         .featli
 
             padding: 36px 10px
@@ -114,6 +125,3 @@ div.btn-center
             margin-inline: 20px
             display: inline-block
 
-        ul
-
-            display: inline-flex

@@ -4,7 +4,8 @@
   color: #fff;
   cursor: pointer;
   font-size: bold;
-  display: inline-block;
+  border-radius: 35px;
+  display: inline-flex;
   background-color: #121212; }
 
 /*# sourceMappingURL=__blogIndex__.css.map */

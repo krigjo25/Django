@@ -25,14 +25,14 @@
 
 ### About the Maintainer
 
-goes by the name Kristoffer, born in 94, :flag_no:.<br>
+goes by the name Kristoffer, born in 94,<br>
 maintaining Python & SQL projects<br>
 otherwise just being a human.
 
 ### Project info
 
-Information about the design can be found in the given links below
-includes the text files below,
+Information about the design can be found in the given links below 
+including the text files below,
 
 *   [krigjo25]()
 
@@ -54,7 +54,7 @@ includes the text files below,
 
 ### What makes the bot unique
 
-The bot is made with love for python,<br> 
+The bot is made with passion for python,<br> 
 it will serve you as a humble bot
 
 
