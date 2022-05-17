@@ -1,7 +1,3 @@
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  font-size: 21.43px; }
-
 ul {
   text-align: start; }
 
@@ -40,6 +36,7 @@ button.btag {
 li.featli {
   margin-block: 16px;
   color: #fefefe;
+  border-radius: 10px;
   background-color: #121212; }
 
 li.featli:hover {

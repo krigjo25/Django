@@ -7,6 +7,17 @@ $urltxt : #fff//rgba(41, 149, 254, 100)
 *
     box-sizing: border-box
 
+h1, h2, h3, h4, h5, h6
+
+    
+    text-align: center
+
+h1
+    font-size: 21.43px
+
+h2
+    font-size: 26px
+
 body
 
     color: #000
@@ -25,10 +36,6 @@ header, main, footer
     text-align: center
     padding-block: 32px
 
-header > h1
-
-    text-align: center
-
 header a, header a:hover, footer  a, footer  a:hover
 
     color: #000
@@ -43,12 +50,10 @@ article
     display: block
     margin-block: 10px
 
-article h2
-
-    font-size: 26px
 article > div 
 
-    padding-block: 30px 
+    padding-block: 30px
+
 label > a
 
     block-size: 100%
@@ -82,5 +87,16 @@ a, a::hover, a::visited
     inline-size: 75%
 
 // Classes
+
+@media screen
+
+  @media (min-width: 900px)
+
+    h1
+        font-size: 2.5rem
+
+    h2
+        font-size: 2rem
+
 
 
