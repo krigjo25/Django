@@ -63,8 +63,8 @@
 
                                 </nav>
 
-                                <label> Published :</label>
-                                <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time> | 
+                                <label> Published by </label><cite> {{ post.author }},</cite><i>
+                                <time date='{{ post.created.date }}' title = 'Published {{post.created}}'>{{ post.created.date }}</time></i> | 
 
                                 categories: <a href=" {% url 'blogIndex' %}"><div class = 'btn-center'><small><button class = "btag"><img src = "{% static 'img/svg/tags-svgrepo-com.svg' %}" alt = 'read-me' style = 'inline-size:23px; margin-inline:1px;' />#{{ tag }}</button></small></div></a>
 
